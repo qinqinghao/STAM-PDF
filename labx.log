@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 18:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3002,7 +3002,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-])
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2])
 \tf@toc=\write4
 \openout4 = `labx.toc'.
 
@@ -3014,7 +3022,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2]
+[3]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 145.
 
@@ -3314,6 +3322,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
+[]|\TU/SimSun(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/SimSun(0)/m/n/12 、| \TU/
+pcr/m/n/12 mem-
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 743--744
+[]|\TU/SimSun(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3322,6 +3340,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25]
+Overfull \hbox (46.53015pt too wide) in paragraph at lines 776--777
+\TU/SimSun(1)/m/n/12.045 为 了 避 免 数 据 泄 漏，|  本 次 复 现 显 式 排 除 了 \TU/pcr/m/n/12.04
+5 seconds_from_fault_start\TU/SimSun(1)/m/n/12.045 、| \TU/pcr/m/n/12.045 second
+s_from_experiment_start\TU/SimSun(1)/m/n/12.045 、|
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3338,9 +3362,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27]
-Underfull \hbox (badness 3260) in paragraph at lines 863--864
-[]\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
-[][][][][] [] [] [] [][][][][][] [] [][][] []
+Underfull \hbox (badness 6961) in paragraph at lines 845--846
+[]|\TU/SimSun(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 862--863
+[]|\TU/SimSun(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 863--864
+[]|\TU/SimSun(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 864--865
+[]|\TU/SimSun(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 865--866
+[]|\TU/SimSun(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
  []
 
 
@@ -3350,7 +3393,104 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+Underfull \hbox (badness 2503) in paragraph at lines 908--909
+[]|\TU/SimSun(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 909--910
+[]|\TU/SimSun(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 910--911
+[]|\TU/SimSun(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 911--911
+[]|\TU/SimSun(0)/m/n/12 候 选 服 务 规 模 有
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+[]|\TU/SimSun(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+[]|\TU/pcr/m/n/12 fault=1\TU/SimSun(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+\TU/pcr/m/n/12 line/recovery=0\TU/SimSun(0)/m/n/12 ；|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--930
+[]|\TU/SimSun(0)/m/n/12 测 试 集
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 930--930
+[]|\TU/SimSun(0)/m/n/12 服 务 级 无 监 督 根
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 930--931
+[]|\TU/pcr/m/n/12 Top-1=90%\TU/SimSun(0)/m/n/12 ，|
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+Underfull \hbox (badness 3260) in paragraph at lines 964--965
+[]\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
+[][][][][] [] [] [] [][][][][][] [] [][][] []
+ []
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 976.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33
 
 ] (labx.aux)
  ***********
@@ -3362,15 +3502,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `labx.out' has not changed.
-(rerunfilecheck)             Checksum: 63A9FAEBE9E0D7E8EEAC4264E2FEF70C;6611.
+(rerunfilecheck)             Checksum: E6051120225B69FBBF347CD4B4CF38E3;7741.
  ) 
 Here is how much of TeX's memory you used:
- 23572 strings out of 402987
- 470002 string characters out of 5455769
- 1106421 words of memory out of 5000000
- 51963 multiletter control sequences out of 15000+600000
+ 23642 strings out of 402987
+ 475955 string characters out of 5455769
+ 1098224 words of memory out of 5000000
+ 52033 multiletter control sequences out of 15000+600000
  636586 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,363b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,414b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on labx.pdf (31 pages).
+Output written on labx.pdf (37 pages).

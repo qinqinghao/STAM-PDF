@@ -44,16 +44,22 @@
 \contentsline {section}{\numberline {17}评估与优化}{23}{section.0.17}%
 \contentsline {subsection}{\numberline {17.1}结果分析}{23}{subsection.0.17.1}%
 \contentsline {subsection}{\numberline {17.2}优化建议}{23}{subsection.0.17.2}%
-\contentsline {chapter}{加分项：SLIM与BARO论文复现与对比}{24}{chapter*.8}%
-\contentsline {section}{\numberline {18}SLIM论文复现：日志异常检测}{24}{section.0.18}%
-\contentsline {subsection}{\numberline {18.1}算法原理}{24}{subsection.0.18.1}%
-\contentsline {subsection}{\numberline {18.2}实现过程}{24}{subsection.0.18.2}%
-\contentsline {subsection}{\numberline {18.3}实验结果}{25}{subsection.0.18.3}%
-\contentsline {section}{\numberline {19}BARO论文复现：根因分析}{25}{section.0.19}%
-\contentsline {subsection}{\numberline {19.1}算法原理}{25}{subsection.0.19.1}%
-\contentsline {subsection}{\numberline {19.2}实现过程}{26}{subsection.0.19.2}%
-\contentsline {subsection}{\numberline {19.3}实验结果}{27}{subsection.0.19.3}%
-\contentsline {section}{\numberline {20}多论文对比分析}{27}{section.0.20}%
-\contentsline {subsection}{\numberline {20.1}对比结论}{27}{subsection.0.20.1}%
-\contentsline {chapter}{参考文献}{27}{subsection.0.20.1}%
+\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{24}{chapter*.8}%
+\contentsline {section}{\numberline {18}复现任务概述}{24}{section.0.18}%
+\contentsline {section}{\numberline {19}SLIM论文复现：可解释规则学习}{24}{section.0.19}%
+\contentsline {subsection}{\numberline {19.1}算法目标与输入输出}{24}{subsection.0.19.1}%
+\contentsline {subsection}{\numberline {19.2}数据构造与标注方法}{25}{subsection.0.19.2}%
+\contentsline {subsection}{\numberline {19.3}谓词构造与规则学习实现}{26}{subsection.0.19.3}%
+\contentsline {subsection}{\numberline {19.4}SLIM复现结果与解释}{27}{subsection.0.19.4}%
+\contentsline {section}{\numberline {20}BARO论文复现：无监督根因定位}{28}{section.0.20}%
+\contentsline {subsection}{\numberline {20.1}算法目标与输入输出}{28}{subsection.0.20.1}%
+\contentsline {subsection}{\numberline {20.2}算法流程实现}{28}{subsection.0.20.2}%
+\contentsline {subsection}{\numberline {20.3}BARO复现结果与解释}{29}{subsection.0.20.3}%
+\contentsline {subsection}{\numberline {20.4}BARO结果可信度与实验边界分析}{30}{subsection.0.20.4}%
+\contentsline {section}{\numberline {21}两篇论文复现结果对比}{31}{section.0.21}%
+\contentsline {section}{\numberline {22}评估与优化建议}{31}{section.0.22}%
+\contentsline {subsection}{\numberline {22.1}SLIM复现评估与优化}{31}{subsection.0.22.1}%
+\contentsline {subsection}{\numberline {22.2}BARO复现评估与优化}{32}{subsection.0.22.2}%
+\contentsline {section}{\numberline {23}本部分小结}{32}{section.0.23}%
+\contentsline {chapter}{参考文献}{32}{section.0.23}%
 \contentsfinish 
