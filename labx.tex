@@ -172,7 +172,7 @@
 \end{spacing}
 
 %---------------------------------------------------------------------
-%  第二章 阶段一：微服务系统部署与论文阅读（汪孟坤）
+%  阶段一：微服务系统部署与论文阅读（汪孟坤）
 %---------------------------------------------------------------------
 \chapter*{阶段一：微服务系统部署与论文阅读}
 \addcontentsline{toc}{chapter}{阶段一：微服务系统部署与论文阅读}
@@ -184,23 +184,29 @@
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
+\section{SockShop微服务系统介绍}
+本部分由汪孟坤负责，主要完成开源微服务系统 SockShop 的部署与验证工作。
+
+SockShop 是一个开源的微服务电商系统，用于模拟袜子销售的电商平台。该系统采用微服务架构，包含 \texttt{front-end}、\texttt{carts}、\texttt{orders}、\texttt{user} 等十余个独立服务，每个服务均容器化运行在 Kubernetes 集群中。该系统架构清晰、原生支持 Prometheus 监控，适合用于本次项目的微服务部署、监控采集和故障注入实验。
+
 \section{Docker环境准备}
-本部分由汪孟坤负责。安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。熟悉容器的基本操作，包括构建（docker build）、运行（docker run）、停止（docker stop）等。
+安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。为提升镜像拉取速度，配置了国内镜像加速器。熟悉容器的基本操作，包括构建（\texttt{docker build}）、运行（\texttt{docker run}）、停止（\texttt{docker stop}）等。
 
 \section{Minikube集群搭建}
-在本地机器上搭建 Minikube 集群，通过以下命令启动：
+在本地机器上搭建 Minikube 集群，分配 4 核 CPU 与 6GB 内存，确保有足够的资源运行微服务。通过以下命令启动 Minikube 集群：
+
 \begin{lstlisting}[language=bash]
-minikube start --driver=docker --memory=8192 --cpus=4
+minikube start --cpus=4 --memory=6144
 kubectl cluster-info
 \end{lstlisting}
+
 确保可以通过 \texttt{kubectl} 命令管理 Kubernetes 集群。
 
 \section{SockShop微服务系统部署}
-\subsection{系统介绍}
-SockShop 是一个开源的微服务电商系统，包含前端、后端、数据库、消息队列等多个微服务组件，涵盖了用户服务、订单服务、商品服务、支付服务等典型微服务架构。
 
 \subsection{部署过程}
 使用 Kubernetes 部署文件将 SockShop 部署到 Minikube 集群：
+
 \begin{lstlisting}[language=bash]
 kubectl create ns sock-shop
 kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservices-demo/master/deploy/kubernetes/complete-demo.yaml
@@ -209,32 +215,26 @@ kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservi
 \subsection{部署验证}
 通过以下方式验证部署是否成功：
 \begin{itemize}
-    \item 使用 \texttt{kubectl get pods -n sock-shop} 查看所有 Pod 状态
-    \item 使用 \texttt{kubectl port-forward} 访问前端服务
-    \item 查看各服务日志确认正常运行
+    \item 使用 \texttt{kubectl get pods -n sock-shop} 查看所有 Pod 状态，验证所有 Pod 均处于 \texttt{Running} 状态；
+    \item 通过 \texttt{minikube service front-end} 获取前端服务的访问地址；
+    \item 在浏览器中打开 SockShop 首页，确认商品展示、购物车等核心功能正常运行。
 \end{itemize}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=14cm]{figure/calculator.png}
-  \caption{SockShop微服务系统运行截图}
-  \label{fig:sockshop}
-\end{figure}
-
 \section{论文选择与阅读}
+
 \subsection{论文方向}
 我们从异常检测与故障诊断领域选择了以下论文进行阅读和复现：
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{论文选择列表}
 \begin{tabular}{p{4cm}p{3cm}p{4cm}}
 \toprule
 \textbf{论文} & \textbf{方向} & \textbf{负责人} \\
 \midrule
-MARINA & KPI异常检测 & 张世隆 \\
-SLIM & 可解释规则学习与故障识别 & 宋炳臻 \\
-BARO & 无监督根因定位与服务排序 & 宋炳臻 \\
+MARINA & KPI异常检测 & 张世隆（2313877） \\
+SLIM & 可解释规则学习与故障识别 & 宋炳臻（2311740） \\
+BARO & 无监督根因定位与服务排序 & 宋炳臻（2311740） \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -242,14 +242,22 @@ BARO & 无监督根因定位与服务排序 & 宋炳臻 \\
 \subsection{论文阅读重点}
 认真阅读论文，重点关注：
 \begin{itemize}
-    \item 论文提出的算法原理与模型架构
-    \item 实验设置与数据处理流程
-    \item 评估指标与结果分析
-    \item 算法在微服务系统上的可复现性
+    \item 论文提出的算法原理与模型架构；
+    \item 实验设置与数据处理流程；
+    \item 评估指标与结果分析；
+    \item 算法在微服务系统上的可复现性。
 \end{itemize}
 
-\end{spacing}
+\section{本章小结}
+本章完成了 SockShop 微服务系统的部署与验证工作。主要工作包括：
+\begin{enumerate}
+    \item 安装并配置 Docker Desktop 与 Minikube 集群；
+    \item 使用 \texttt{kubectl apply} 部署 SockShop 微服务；
+    \item 验证所有 Pod 状态为 \texttt{Running}，并通过浏览器访问 SockShop 首页确认系统正常运行；
+    \item 完成 MARINA、SLIM、BARO 三篇论文的选题与阅读，明确后续复现方向。
+\end{enumerate}
 
+\end{spacing}
 %---------------------------------------------------------------------
 %  第三章 阶段二：Prometheus & Grafana 数据采集（王建雄）
 %---------------------------------------------------------------------
