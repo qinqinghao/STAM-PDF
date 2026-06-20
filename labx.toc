@@ -24,42 +24,45 @@
 \contentsline {chapter}{阶段三：Selenium \& JMeter 测试}{9}{chapter*.5}%
 \contentsline {section}{\numberline {13}Selenium功能测试}{9}{section.0.13}%
 \contentsline {subsection}{\numberline {13.1}测试目标}{9}{subsection.0.13.1}%
-\contentsline {subsection}{\numberline {13.2}测试场景}{9}{subsection.0.13.2}%
-\contentsline {subsection}{\numberline {13.3}核心测试代码}{9}{subsection.0.13.3}%
-\contentsline {subsection}{\numberline {13.4}跨浏览器兼容性测试}{10}{subsection.0.13.4}%
-\contentsline {section}{\numberline {14}JMeter性能测试}{11}{section.0.14}%
-\contentsline {subsection}{\numberline {14.1}测试场景设计}{11}{subsection.0.14.1}%
-\contentsline {subsection}{\numberline {14.2}HTTP 请求配置}{11}{subsection.0.14.2}%
-\contentsline {subsection}{\numberline {14.3}测试结果截图}{12}{subsection.0.14.3}%
-\contentsline {subsection}{\numberline {14.4}测试结果分析}{19}{subsection.0.14.4}%
-\contentsline {subsubsection}{各接口性能分析（Scene-3）}{20}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {14.5}测试结论}{20}{subsection.0.14.5}%
-\contentsline {chapter}{阶段四：MARINA算法复现与验证}{21}{chapter*.7}%
-\contentsline {section}{\numberline {15}数据预处理}{21}{section.0.15}%
-\contentsline {subsection}{\numberline {15.1}数据清洗}{21}{subsection.0.15.1}%
-\contentsline {section}{\numberline {16}MARINA算法复现：KPI异常检测}{21}{section.0.16}%
-\contentsline {subsection}{\numberline {16.1}算法原理}{21}{subsection.0.16.1}%
-\contentsline {subsection}{\numberline {16.2}实现过程}{22}{subsection.0.16.2}%
-\contentsline {subsection}{\numberline {16.3}实验结果}{22}{subsection.0.16.3}%
-\contentsline {section}{\numberline {17}评估与优化}{23}{section.0.17}%
-\contentsline {subsection}{\numberline {17.1}结果分析}{23}{subsection.0.17.1}%
-\contentsline {subsection}{\numberline {17.2}优化建议}{23}{subsection.0.17.2}%
-\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{24}{chapter*.8}%
-\contentsline {section}{\numberline {18}复现任务概述}{24}{section.0.18}%
-\contentsline {section}{\numberline {19}SLIM论文复现：可解释规则学习}{24}{section.0.19}%
-\contentsline {subsection}{\numberline {19.1}算法目标与输入输出}{24}{subsection.0.19.1}%
-\contentsline {subsection}{\numberline {19.2}数据构造与标注方法}{25}{subsection.0.19.2}%
-\contentsline {subsection}{\numberline {19.3}谓词构造与规则学习实现}{26}{subsection.0.19.3}%
-\contentsline {subsection}{\numberline {19.4}SLIM复现结果与解释}{27}{subsection.0.19.4}%
-\contentsline {section}{\numberline {20}BARO论文复现：无监督根因定位}{28}{section.0.20}%
-\contentsline {subsection}{\numberline {20.1}算法目标与输入输出}{28}{subsection.0.20.1}%
-\contentsline {subsection}{\numberline {20.2}算法流程实现}{28}{subsection.0.20.2}%
-\contentsline {subsection}{\numberline {20.3}BARO复现结果与解释}{29}{subsection.0.20.3}%
-\contentsline {subsection}{\numberline {20.4}BARO结果可信度与实验边界分析}{30}{subsection.0.20.4}%
-\contentsline {section}{\numberline {21}两篇论文复现结果对比}{31}{section.0.21}%
-\contentsline {section}{\numberline {22}评估与优化建议}{31}{section.0.22}%
-\contentsline {subsection}{\numberline {22.1}SLIM复现评估与优化}{31}{subsection.0.22.1}%
-\contentsline {subsection}{\numberline {22.2}BARO复现评估与优化}{32}{subsection.0.22.2}%
-\contentsline {section}{\numberline {23}本部分小结}{32}{section.0.23}%
-\contentsline {chapter}{参考文献}{32}{section.0.23}%
+\contentsline {subsection}{\numberline {13.2}Selenium IDE 功能测试}{9}{subsection.0.13.2}%
+\contentsline {subsection}{\numberline {13.3}Chrome 浏览器测试}{10}{subsection.0.13.3}%
+\contentsline {subsection}{\numberline {13.4}页面性能指标测试}{11}{subsection.0.13.4}%
+\contentsline {subsubsection}{浏览器开发工具测试}{11}{subsubsection*.6}%
+\contentsline {subsubsection}{Lighthouse 性能测试}{11}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {13.5}性能指标分析}{12}{subsection.0.13.5}%
+\contentsline {section}{\numberline {14}JMeter性能测试}{13}{section.0.14}%
+\contentsline {subsection}{\numberline {14.1}测试场景设计}{13}{subsection.0.14.1}%
+\contentsline {subsection}{\numberline {14.2}HTTP 请求配置}{13}{subsection.0.14.2}%
+\contentsline {subsection}{\numberline {14.3}测试结果截图}{14}{subsection.0.14.3}%
+\contentsline {subsection}{\numberline {14.4}测试结果分析}{21}{subsection.0.14.4}%
+\contentsline {subsubsection}{各接口性能分析（Scene-3）}{22}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {14.5}测试结论}{22}{subsection.0.14.5}%
+\contentsline {chapter}{阶段四：MARINA算法复现与验证}{23}{chapter*.9}%
+\contentsline {section}{\numberline {15}数据预处理}{23}{section.0.15}%
+\contentsline {subsection}{\numberline {15.1}数据清洗}{23}{subsection.0.15.1}%
+\contentsline {section}{\numberline {16}MARINA算法复现：KPI异常检测}{23}{section.0.16}%
+\contentsline {subsection}{\numberline {16.1}算法原理}{23}{subsection.0.16.1}%
+\contentsline {subsection}{\numberline {16.2}实现过程}{24}{subsection.0.16.2}%
+\contentsline {subsection}{\numberline {16.3}实验结果}{24}{subsection.0.16.3}%
+\contentsline {section}{\numberline {17}评估与优化}{25}{section.0.17}%
+\contentsline {subsection}{\numberline {17.1}结果分析}{25}{subsection.0.17.1}%
+\contentsline {subsection}{\numberline {17.2}优化建议}{25}{subsection.0.17.2}%
+\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{26}{chapter*.10}%
+\contentsline {section}{\numberline {18}复现任务概述}{26}{section.0.18}%
+\contentsline {section}{\numberline {19}SLIM论文复现：可解释规则学习}{26}{section.0.19}%
+\contentsline {subsection}{\numberline {19.1}算法目标与输入输出}{26}{subsection.0.19.1}%
+\contentsline {subsection}{\numberline {19.2}数据构造与标注方法}{27}{subsection.0.19.2}%
+\contentsline {subsection}{\numberline {19.3}谓词构造与规则学习实现}{28}{subsection.0.19.3}%
+\contentsline {subsection}{\numberline {19.4}SLIM复现结果与解释}{29}{subsection.0.19.4}%
+\contentsline {section}{\numberline {20}BARO论文复现：无监督根因定位}{30}{section.0.20}%
+\contentsline {subsection}{\numberline {20.1}算法目标与输入输出}{30}{subsection.0.20.1}%
+\contentsline {subsection}{\numberline {20.2}算法流程实现}{30}{subsection.0.20.2}%
+\contentsline {subsection}{\numberline {20.3}BARO复现结果与解释}{31}{subsection.0.20.3}%
+\contentsline {subsection}{\numberline {20.4}BARO结果可信度与实验边界分析}{32}{subsection.0.20.4}%
+\contentsline {section}{\numberline {21}两篇论文复现结果对比}{33}{section.0.21}%
+\contentsline {section}{\numberline {22}评估与优化建议}{33}{section.0.22}%
+\contentsline {subsection}{\numberline {22.1}SLIM复现评估与优化}{33}{subsection.0.22.1}%
+\contentsline {subsection}{\numberline {22.2}BARO复现评估与优化}{34}{subsection.0.22.2}%
+\contentsline {section}{\numberline {23}本部分小结}{34}{section.0.23}%
+\contentsline {chapter}{参考文献}{34}{section.0.23}%
 \contentsfinish 
