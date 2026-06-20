@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 21:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2726,44 +2726,44 @@ n input line 1270.
 LaTeX Encoding Info:    Redeclaring text command \textinterrobangdown (encoding
  TU) on input line 1406.
 )
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 92
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 93
 .
-LaTeX Font Info:    No file TUptm.fd. on input line 92.
+LaTeX Font Info:    No file TUptm.fd. on input line 93.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 92.
+(Font)              using `TU/lmr/m/n' instead on input line 93.
 
 (labx.aux)
 \openout1 = `labx.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 92
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 93
 .
  (F:\MiKTex\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -2771,57 +2771,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 92.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 92.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 92.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 92.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 92.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 92.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 92.
-LaTeX Font Info:    Redeclaring math accent \check on input line 92.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 92.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 92.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 92.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 92.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 92.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 93.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 93.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 93.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 93.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 93.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 93.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 93.
+LaTeX Font Info:    Redeclaring math accent \check on input line 93.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 93.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 93.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 93.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 93.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 92.
+(Font)              `operators' in the math version `normal' on input line 93.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 92.
+(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 93.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 92.
+(Font)              `operators' in the math version `bold' on input line 93.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 92.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 93.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 92.
+(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 92.
+(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 92.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 92.
+(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 92.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 93.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 92.
+(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 92.
+(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 92.
+(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 93.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 92.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2840,7 +2840,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-23.91173pt
-* \headheight=12.0pt
+* \headheight=14.5pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -2858,7 +2858,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count349
-Package hyperref Info: Link coloring OFF on input line 92.
+Package hyperref Info: Link coloring OFF on input line 93.
 (labx.out) (labx.out)
 \@outlinefile=\write3
 \openout3 = `labx.out'.
@@ -2868,7 +2868,7 @@ File: figure//nankai.jpg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 101.
+(Font)              using `TU/ptm/m/n' instead on input line 102.
 
 
 Package fontspec Info: 
@@ -2898,7 +2898,7 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 101.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 102.
 
 
 Package fontspec Info: 
@@ -2927,13 +2927,13 @@ Package fontspec Info:
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <16.06> on input line 107.
+(Font)              <16.06> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.05249> on input line 107.
+(Font)              <14.05249> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 107.
+(Font)              <10.53937> on input line 108.
 
-Overfull \hbox (6.33618pt too wide) detected at line 109
+Overfull \hbox (6.33618pt too wide) detected at line 110
 \TU/SimSun(1)/m/n/16.06 作 业 名 称：| 
  []
 
@@ -2964,22 +2964,22 @@ Package fontspec Info:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 110
+Overfull \hbox (6.33618pt too wide) detected at line 111
 \TU/SimSun(1)/m/n/16.06 学 院：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 111
+Overfull \hbox (6.33618pt too wide) detected at line 112
 \TU/SimSun(1)/m/n/16.06 姓 名：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 112
+Overfull \hbox (6.33618pt too wide) detected at line 113
 \TU/SimSun(1)/m/n/16.06 学 号：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 113
+Overfull \hbox (6.33618pt too wide) detected at line 114
 \TU/SimSun(1)/m/n/16.06 指 导 老 师：| 
  []
 
@@ -2992,43 +2992,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 1.
+ [1
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[1
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2])
+])
 \tf@toc=\write4
 \openout4 = `labx.toc'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3]
+ [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 145.
+(Font)              <12> on input line 146.
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
-(Font)              using `TU/SimSun(1)/m/n' instead on input line 162.
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 163.
 
 
 Package fontspec Info: 
@@ -3056,24 +3032,9 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [1
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
+] [2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (F:\MiKTex\tex/latex/listings\lstlang1.sty
@@ -3083,414 +3044,194 @@ Overfull \hbox (243.38179pt too wide) in paragraph at lines 206--207
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [3
 
 ]
-File: figure/calculator.png Graphic file (type bmp)
-<figure/calculator.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6
+File: docs/汪孟坤/minikube集群部署sock-shop微服务系统.png Graphic file (type bmp)
+<docs/汪孟坤/minikube集群部署sock-shop微服务系统.png>
+File: docs/汪孟坤/网页.png Graphic file (type bmp)
+<docs/汪孟坤/网页.png>
+ [4] [5] [6
 
 ]
 File: figure/calculator.png Graphic file (type bmp)
 <figure/calculator.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8] (F:\MiKTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9
+ [7] [8]
+File: docs/马嘉皓/图片 1.jpg Graphic file (type bmp)
+<docs/马嘉皓/图片 1.jpg>
+ [9
 
 ]
-File: figure/calculator.png Graphic file (type bmp)
-<figure/calculator.png>
+File: docs/马嘉皓/图片 2.png Graphic file (type bmp)
+<docs/马嘉皓/图片 2.png>
+File: docs/马嘉皓/图片 3.png Graphic file (type bmp)
+<docs/马嘉皓/图片 3.png>
+ [10]
+File: docs/马嘉皓/图片 4.png Graphic file (type bmp)
+<docs/马嘉皓/图片 4.png>
+ [11]
+Underfull \hbox (badness 1527) in paragraph at lines 422--423
+[]|\TU/SimSun(0)/m/n/12 页 面 元 素 加 载 时 发 生 明 显
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+Underfull \hbox (badness 1527) in paragraph at lines 426--427
+[]|\TU/SimSun(0)/m/n/12 页 面 视 觉 内 容 填 充 速 度 较
+ []
 
-[10]
+[12]
 File: docs/覃庆浩/Summary Report（10,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（10,10,10,30）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
+ [13]
 File: docs/覃庆浩/Aggregate Report（10,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（10,10,10,30）.png>
 File: docs/覃庆浩/Response Time Graph（10,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（10,10,10,30）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
+ [14]
 File: docs/覃庆浩/Summary Report（50,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（50,10,10,30）.png>
 File: docs/覃庆浩/Aggregate Report（50,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（50,10,10,30）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
+ [15]
 File: docs/覃庆浩/Response Time Graph（50,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（50,10,10,30）.png>
 File: docs/覃庆浩/Summary Report（100,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（100,10,10,30）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14]
+ [16]
 File: docs/覃庆浩/Aggregate Report（100,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（100,10,10,30）.png>
 File: docs/覃庆浩/Response Time Graph（100,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（100,10,10,30）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
+ [17]
 File: docs/覃庆浩/Summary Report（100,10,10,60）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（100,10,10,60）.png>
 File: docs/覃庆浩/Aggregate Report（100,10,10,60）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（100,10,10,60）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
+ [18]
 File: docs/覃庆浩/Response Time Graph（100,10,10,60）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（100,10,10,60）.png>
 File: docs/覃庆浩/Summary Report（100,10,10,90）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（100,10,10,90）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
+ [19]
 File: docs/覃庆浩/Aggregate Report（100,10,10,90）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（100,10,10,90）.png>
 File: docs/覃庆浩/Response Time Graph（100,10,10,90）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（100,10,10,90）.png>
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18]
-Overfull \hbox (115.2233pt too wide) in paragraph at lines 556--567
+ [20]
+Overfull \hbox (115.2233pt too wide) in paragraph at lines 592--603
  [][] 
  []
 
+[21] [22] (F:\MiKTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) [23
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[21
+] [24] [25] [26
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
 []|\TU/SimSun(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/SimSun(0)/m/n/12 、| \TU/
 pcr/m/n/12 mem-
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 743--744
+Underfull \hbox (badness 3219) in paragraph at lines 756--757
 []|\TU/SimSun(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25]
-Overfull \hbox (46.53015pt too wide) in paragraph at lines 776--777
+[27]
+Overfull \hbox (46.53015pt too wide) in paragraph at lines 789--790
 \TU/SimSun(1)/m/n/12.045 为 了 避 免 数 据 泄 漏，|  本 次 复 现 显 式 排 除 了 \TU/pcr/m/n/12.04
 5 seconds_from_fault_start\TU/SimSun(1)/m/n/12.045 、| \TU/pcr/m/n/12.045 second
 s_from_experiment_start\TU/SimSun(1)/m/n/12.045 、|
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27]
-Underfull \hbox (badness 6961) in paragraph at lines 845--846
+[28] [29]
+Underfull \hbox (badness 6961) in paragraph at lines 858--859
 []|\TU/SimSun(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 862--863
+Underfull \hbox (badness 1527) in paragraph at lines 875--876
 []|\TU/SimSun(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 863--864
+Underfull \hbox (badness 1527) in paragraph at lines 876--877
 []|\TU/SimSun(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 864--865
+Underfull \hbox (badness 1527) in paragraph at lines 877--878
 []|\TU/SimSun(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 865--866
+Underfull \hbox (badness 1527) in paragraph at lines 878--879
 []|\TU/SimSun(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[29]
-Underfull \hbox (badness 2503) in paragraph at lines 908--909
+[30] [31]
+Underfull \hbox (badness 2503) in paragraph at lines 921--922
 []|\TU/SimSun(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 909--910
+Underfull \hbox (badness 2503) in paragraph at lines 922--923
 []|\TU/SimSun(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 910--911
+Underfull \hbox (badness 2503) in paragraph at lines 923--924
 []|\TU/SimSun(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 911--911
+Underfull \hbox (badness 2293) in paragraph at lines 924--924
 []|\TU/SimSun(0)/m/n/12 候 选 服 务 规 模 有
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 929--929
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 []|\TU/SimSun(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 929--929
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 []|\TU/pcr/m/n/12 fault=1\TU/SimSun(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 929--929
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 \TU/pcr/m/n/12 line/recovery=0\TU/SimSun(0)/m/n/12 ；|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 929--930
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
 []|\TU/SimSun(0)/m/n/12 测 试 集
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 930--930
+Underfull \hbox (badness 2293) in paragraph at lines 943--943
 []|\TU/SimSun(0)/m/n/12 服 务 级 无 监 督 根
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 930--931
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
 []|\TU/pcr/m/n/12 Top-1=90%\TU/SimSun(0)/m/n/12 ，|
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[32]
-Underfull \hbox (badness 3260) in paragraph at lines 964--965
+[33] [34]
+Underfull \hbox (badness 3260) in paragraph at lines 977--978
 []\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
 [][][][][] [] [] [] [][][][][][] [] [][][] []
  []
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 976.
+(Font)              using `TU/ptm/m/n' instead on input line 989.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[33
+[35
 
 ] (labx.aux)
  ***********
@@ -3502,15 +3243,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `labx.out' has not changed.
-(rerunfilecheck)             Checksum: E6051120225B69FBBF347CD4B4CF38E3;7741.
+(rerunfilecheck)             Checksum: DC762263495364D2B0091954B6ABF5EB;7583.
  ) 
 Here is how much of TeX's memory you used:
- 23642 strings out of 402987
- 475955 string characters out of 5455769
- 1098224 words of memory out of 5000000
- 52033 multiletter control sequences out of 15000+600000
+ 23649 strings out of 402987
+ 475115 string characters out of 5455769
+ 1100068 words of memory out of 5000000
+ 52032 multiletter control sequences out of 15000+600000
  636586 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,414b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,414b,1434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on labx.pdf (37 pages).
+Output written on labx.pdf (39 pages).

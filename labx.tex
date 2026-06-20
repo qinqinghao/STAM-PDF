@@ -49,6 +49,7 @@
 }
 
 \pagestyle{fancy}
+\setlength{\headheight}{14.5pt}
 \lhead{\kaishu ``软件测试与维护''大作业报告}
 \rhead{\kaishu SockShop微服务系统}
 \cfoot{\thepage}
@@ -184,19 +185,12 @@
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
-\section{SockShop微服务系统介绍}
-本部分由汪孟坤负责，主要完成开源微服务系统 SockShop 的部署与验证工作。
+\section{集群环境搭建}
+安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。
 
-SockShop 是一个开源的微服务电商系统，用于模拟袜子销售的电商平台。该系统采用微服务架构，包含 \texttt{front-end}、\texttt{carts}、\texttt{orders}、\texttt{user} 等十余个独立服务，每个服务均容器化运行在 Kubernetes 集群中。该系统架构清晰、原生支持 Prometheus 监控，适合用于本次项目的微服务部署、监控采集和故障注入实验。
-
-\section{Docker环境准备}
-安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。为提升镜像拉取速度，配置了国内镜像加速器。熟悉容器的基本操作，包括构建（\texttt{docker build}）、运行（\texttt{docker run}）、停止（\texttt{docker stop}）等。
-
-\section{Minikube集群搭建}
-在本地机器上搭建 Minikube 集群，分配 4 核 CPU 与 6GB 内存，确保有足够的资源运行微服务。通过以下命令启动 Minikube 集群：
-
+在本地机器上搭建 Minikube 集群，通过以下命令启动：
 \begin{lstlisting}[language=bash]
-minikube start --cpus=4 --memory=6144
+minikube start --driver=docker
 kubectl cluster-info
 \end{lstlisting}
 
@@ -220,6 +214,20 @@ kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservi
     \item 在浏览器中打开 SockShop 首页，确认商品展示、购物车等核心功能正常运行。
 \end{itemize}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/汪孟坤/minikube集群部署sock-shop微服务系统.png}
+  \caption{SockShop微服务系统运行截图}
+  \label{fig:sockshop}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/汪孟坤/网页.png}
+  \caption{SockShop微服务系统前端页面}
+  \label{fig:sockshop-web}
+\end{figure}
+
 \section{论文选择与阅读}
 
 \subsection{论文方向}
@@ -240,7 +248,6 @@ BARO & 无监督根因定位与服务排序 & 宋炳臻（2311740） \\
 \end{table}
 
 \subsection{论文阅读重点}
-认真阅读论文，重点关注：
 \begin{itemize}
     \item 论文提出的算法原理与模型架构；
     \item 实验设置与数据处理流程；
@@ -467,54 +474,85 @@ curl -G "http://prometheus-server:9090/api/v1/query_range" \
 \end{flushright}
 
 \subsection{测试目标}
-本部分由马嘉皓负责。使用 Selenium 编写自动化脚本，模拟用户在前端界面上的操作，验证系统功能正常性。
+使用 Selenium 对 SockShop 前端界面进行自动化功能测试与性能测试，涵盖用户注册登录、商品浏览选取、结算等完整交互流程，并结合浏览器开发工具与 Lighthouse 对页面性能指标进行评估。
 
-\subsection{测试场景}
+\subsection{Selenium IDE 功能测试}
+
+使用 Selenium IDE 对 SockShop 前端进行功能测试，覆盖以下核心用户操作流程：
 \begin{itemize}
-    \item 用户登录流程
-    \item 浏览商品列表与详情
-    \item 添加商品到购物车
-    \item 下单与支付流程
-    \item 页面加载时间记录
+    \item \textbf{用户注册与登录：} 模拟新用户填写注册表单、提交注册，并验证登录流程；
+    \item \textbf{商品浏览与选取：} 自动化点击商品列表页、进入商品详情页、将商品加入购物车；
+    \item \textbf{结算流程：} 模拟进入购物车、确认订单并完成结算操作。
 \end{itemize}
 
-\subsection{核心测试代码}
-\begin{lstlisting}[language=Python]
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
-
-driver = webdriver.Chrome()
-driver.get("http://sockshop-frontend:80")
-
-# 登录测试
-driver.find_element(By.ID, "login-button").click()
-driver.find_element(By.ID, "username").send_keys("user")
-driver.find_element(By.ID, "password").send_keys("password")
-driver.find_element(By.ID, "login-submit").click()
-
-# 浏览商品
-products = driver.find_elements(By.CLASS_NAME, "product-item")
-print(f"Found {len(products)} products")
-
-# 记录页面加载时间
-start_time = time.time()
-driver.get("http://sockshop-frontend:80/catalogue")
-load_time = time.time() - start_time
-print(f"Page load time: {load_time:.2f}s")
-
-driver.quit()
-\end{lstlisting}
-
-\subsection{跨浏览器兼容性测试}
-在不同的浏览器（Chrome、Firefox、Edge）中运行测试脚本，验证系统兼容性。
-
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=14cm]{figure/calculator.png}
-  \caption{Selenium自动化测试运行截图}
-  \label{fig:selenium}
+  \includegraphics[width=14cm]{docs/马嘉皓/图片 1.jpg}
+  \caption{Selenium IDE 前端功能测试截图（注册、登录、购物及结算流程）}
+  \label{fig:selenium-ide}
 \end{figure}
+
+\subsection{Chrome 浏览器测试}
+
+在 Chrome 浏览器中使用 \textbf{Testcase Studio} 插件进行前端功能测试。该插件可以录制并回放用户在浏览器中的操作，模拟真实用户与 SockShop 前端界面的交互过程，对各功能模块进行验证。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/马嘉皓/图片 2.png}
+  \caption{Chrome 浏览器 Testcase Studio 插件测试截图}
+  \label{fig:selenium-chrome}
+\end{figure}
+
+\subsection{页面性能指标测试}
+
+\subsubsection{浏览器开发工具测试}
+
+使用 Chrome 浏览器内置开发工具（DevTools）对 SockShop 前端页面进行性能测量，记录页面加载时间、资源加载情况、网络请求耗时等指标。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/马嘉皓/图片 3.png}
+  \caption{Chrome DevTools 性能指标测试截图}
+  \label{fig:selenium-devtools}
+\end{figure}
+
+\subsubsection{Lighthouse 性能测试}
+
+使用 Google Lighthouse 对 SockShop 前端页面进行系统性能评估，获取 Web 性能核心指标（Core Web Vitals）数据。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/马嘉皓/图片 4.png}
+  \caption{Lighthouse 性能评测结果截图}
+  \label{fig:selenium-lighthouse}
+\end{figure}
+
+\subsection{性能指标分析}
+
+基于浏览器开发工具与 Lighthouse 的测试结果，对 SockShop 前端页面的关键 Web 性能指标进行分析：
+
+\begin{table}[H]
+\centering
+\caption{SockShop 前端 Web 性能指标汇总}
+\begin{tabular}{p{5.5cm}ccp{5cm}}
+\toprule
+\textbf{指标} & \textbf{测量值} & \textbf{评级} & \textbf{说明} \\
+\midrule
+累计布局偏移（CLS） & 0.66 / 0.62 & 较差 & 页面元素加载时发生明显位移 \\
+最大内容渲染时间（LCP） & 0.3s / 1.4s & 良好 & 主要内容渲染速度较快 \\
+交互至下一次绘制（INP） & 48ms & 优秀 & 用户交互响应及时 \\
+总阻塞时间（TBT） & 0ms & 优秀 & 主线程无长任务阻塞 \\
+速度指数（SI） & 6.3s & 较差 & 页面视觉内容填充速度较慢 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+综合分析：
+\begin{itemize}
+    \item \textbf{优势方面：} LCP 最大内容渲染时间（0.3s/1.4s）和 INP 交互响应时间（48ms）均达到优秀水平，说明核心交互元素加载迅速，用户操作响应及时；TBT 为 0ms，表明主线程不存在长任务阻塞，页面响应流畅。
+    \item \textbf{不足方面：} CLS（0.66/0.62）偏高，说明页面在加载过程中存在较明显的布局位移，可能影响用户体验；SI（6.3s）偏大，表明页面视觉内容填充速度较慢，首屏展示体验有待优化。
+    \item \textbf{优化建议：} 针对 CLS 问题，可为图片和动态内容预留固定尺寸，避免资源加载后引起的布局抖动；针对 SI 问题，可优化关键渲染路径、减少渲染阻塞资源（如非必要 CSS/JS 的延迟加载），以提升首屏加载速度。
+\end{itemize}
 
 \section{JMeter性能测试}
 \vspace{-0.5em}
@@ -541,7 +579,6 @@ Scene-5 & 100 & 10 & 10 & 90 & 稳定性测试 \\
 \end{tabular}
 \end{table}
 
-\subsection{HTTP 请求配置}
 测试计划包含 5 个核心 HTTP 请求，覆盖 SockShop 的主要功能模块：
 
 \begin{table}[htbp]
@@ -695,31 +732,6 @@ Scene-5 & 29 & 9 & 85 & 93 & 364.7 & 0.00\% \\
 
 所有测试场景错误率均为 0.00\%，说明系统在高负载下仍保持高可靠性。
 
-\subsubsection{各接口性能分析（Scene-3）}
-\begin{table}[htbp]
-\centering
-\caption{各接口响应时间对比（100 并发用户）}
-\begin{tabular}{cccc}
-\toprule
-\textbf{接口} & \textbf{平均响应时间(ms)} & \textbf{90\%响应时间(ms)} & \textbf{吞吐量(req/s)} \\
-\midrule
-Get\_Homepage & 17 & 73 & 64.0 \\
-Get\_Category & 16 & 74 & 63.9 \\
-Get\_Orders & 16 & 75 & 63.9 \\
-Get\_Basket & 18 & 79 & 64.0 \\
-Get\_Detail & 16 & 75 & 64.0 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-从各接口性能对比可以看出：
-\begin{itemize}
-    \item 各接口响应时间相近（16-18ms），无明显性能瓶颈，负载均衡良好
-    \item Get\_Basket 响应时间略高（18ms），可能与购物车数据库操作有关
-    \item 所有接口吞吐量均衡（约 64 req/s），说明各微服务处理能力匹配
-\end{itemize}
-
-\subsection{测试结论}
 \begin{itemize}
     \item \textbf{响应时间：} 平均响应时间 7-29ms，远低于目标值 500ms，90\% 请求响应时间 < 85ms
     \item \textbf{吞吐量：} 最高达到 364.7 req/sec，随并发用户数线性增长
@@ -728,6 +740,8 @@ Get\_Detail & 16 & 75 & 64.0 \\
     \item \textbf{最佳并发：} 50 用户时性能最优（平均响应时间 7ms）
     \item \textbf{系统容量：} 当前配置下可稳定支持至少 100 并发用户
 \end{itemize}
+
+综合以上测试结果，SockShop 微服务系统在当前部署环境下整体性能表现优异。从低并发到高并发，系统均能保持毫秒级响应且错误率为零，吞吐量随负载线性增长，未出现性能瓶颈。长时间压力测试下响应时间仅轻微增加，系统运行稳定。总体而言，该系统在响应速度、吞吐量、可靠性和稳定性等方面均表现良好。
 
 \end{spacing}
 
