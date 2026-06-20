@@ -719,7 +719,7 @@ model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
 
 \section{复现任务概述}
 
-本部分围绕 SockShop 微服务系统中的故障诊断任务，复现两篇与微服务异常检测和根因定位相关的论文方法。第一部分复现 SLIM 论文中的可解释规则学习思想，将 Prometheus 采集到的 Pod 级监控指标转化为布尔谓词，并学习少量、短规则组成的故障识别规则集。第二部分复现 BARO 论文中的无监督根因定位思想，基于多服务、多指标时间序列进行变点检测、异常评分和服务级根因排序。两项复现均使用本组在 SockShop 系统中通过 ChaosMesh 注入故障并由 Prometheus 采集得到的数据。
+本部分围绕 SockShop 微服务系统中的故障诊断任务，复现两篇与微服务异常检测和根因定位相关的论文方法。第一部分复现 SLIM 论文中的可解释规则学习思想，将 Prometheus 采集到的 Pod 级监控指标转化为布尔谓词，并学习少量、短规则组成的故障识别规则集\cite{slim2024}。第二部分复现 BARO 论文中的无监督根因定位思想，基于多服务、多指标时间序列进行变点检测、异常评分和服务级根因排序\cite{baro2024}。两项复现均使用本组在 SockShop 系统中通过 ChaosMesh 注入故障并由 Prometheus 采集得到的数据。
 
 本部分的实验设计重点关注三个问题：第一，算法的输入和输出形式是否清楚；第二，数据标签或评估标签如何得到，是否参与算法训练；第三，复现结果如何评价，以及针对复现边界可以提出哪些优化建议。由于 SLIM 输出的是时间点级二分类结果，而 BARO 输出的是服务级根因排序结果，因此二者不能简单地只用同一个 F1 指标比较，而应分别使用与任务形式匹配的评价指标。
 
@@ -727,7 +727,7 @@ model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
 
 \subsection{算法目标与输入输出}
 
-SLIM 在本次复现中被定位为一个监督式规则学习算法。算法目标是从监控指标中学习一组可解释的故障识别规则，用于判断某个目标 Pod 在某个时间点是否处于 Pod Failure 故障状态。与黑盒分类模型不同，SLIM 的输出不是单纯的预测标签，而是由若干布尔条件组成的 IF-THEN 规则集。例如，规则可以表达为“若 CPU 使用率低于某个阈值且内存工作集低于某个阈值，则判断该时间点属于 Pod Failure”。
+SLIM 在本次复现中被定位为一个监督式规则学习算法\cite{slim2024}。算法目标是从监控指标中学习一组可解释的故障识别规则，用于判断某个目标 Pod 在某个时间点是否处于 Pod Failure 故障状态。与黑盒分类模型不同，SLIM 的输出不是单纯的预测标签，而是由若干布尔条件组成的 IF-THEN 规则集。例如，规则可以表达为“若 CPU 使用率低于某个阈值且内存工作集低于某个阈值，则判断该时间点属于 Pod Failure”。
 
 本次复现没有直接使用日志文本，而是使用 Prometheus 指标近似复现 SLIM 的规则学习核心流程。原始输入为 SockShop 系统在故障注入实验中产生的多指标时间序列，经过预处理后整理为目标 Pod 的时间点级宽表。连续指标进一步被转化为布尔谓词矩阵，作为规则学习算法的直接输入。
 
@@ -827,7 +827,7 @@ SLIM 的规则学习过程要求输入特征为布尔条件，因此需要先将
 
 \subsection{算法目标与输入输出}
 
-BARO 在本次复现中被定位为无监督根因定位算法。与 SLIM 不同，BARO 不学习时间点级二分类规则，而是从多服务、多指标时间序列中发现异常变化，并对可能的根因服务进行排序。它的输出不是“故障/非故障”标签，而是服务级根因候选列表。排序越靠前，表示该服务越可能是故障根因。
+BARO 在本次复现中被定位为无监督根因定位算法\cite{baro2024}。与 SLIM 不同，BARO 不学习时间点级二分类规则，而是从多服务、多指标时间序列中发现异常变化，并对可能的根因服务进行排序。它的输出不是“故障/非故障”标签，而是服务级根因候选列表。排序越靠前，表示该服务越可能是故障根因。
 
 本次复现复用了前述 10 轮 \texttt{carts} 服务 Pod Failure 数据，并选择 \texttt{cpu\_rate}、\texttt{memory\_usage}、\texttt{restart\_count\_delta} 等指标构造多变量时间序列。BARO 运行过程中不使用故障标签训练模型，而是直接基于时间序列变化进行变点检测和异常评分。真实根因标签仅在最终评估阶段使用；由于故障由 ChaosMesh 注入到 \texttt{carts} 服务，因此每轮实验的真实根因服务均为 \texttt{carts}。
 
@@ -972,11 +972,11 @@ BARO 的局限主要来自窗口划分和鲁棒统计评分。复现实验中出
 	\bibitem{marina}
 	MARINA Authors. MARINA: Multi-Variate KPI Anomaly Detection for Microservice Systems. Conference/Journal, Year.
 	
-	\bibitem{slim}
-	SLIM论文及本组复现实验代码与数据处理记录.
-	
-	\bibitem{baro}
-	BARO论文及本组复现实验代码与数据处理记录.
+		\bibitem{slim2024}
+		Rui Ren, Jingbang Yang, Linxiao Yang, Xinyue Gu, and Liang Sun. SLIM: a Scalable Light-weight Root Cause Analysis for Imbalanced Data in Microservice. \emph{arXiv preprint arXiv:2405.20848}, 2024. \url{https://arxiv.org/abs/2405.20848}
+		
+		\bibitem{baro2024}
+		Luan Pham, Huong Ha, and Hongyu Zhang. BARO: Robust Root Cause Analysis for Microservices via Multivariate Bayesian Online Change Point Detection. \emph{arXiv preprint arXiv:2405.09330}, 2024. Accepted to FSE 2024. \url{https://arxiv.org/abs/2405.09330}
 	
 \end{thebibliography}
 
