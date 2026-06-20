@@ -233,8 +233,8 @@ kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservi
 \textbf{论文} & \textbf{方向} & \textbf{负责人} \\
 \midrule
 MARINA & KPI异常检测 & 张世隆 \\
-SLIM & 日志异常检测 & 宋炳臻 \\
-BARO（加分项） & 根因分析 & 宋炳臻 \\
+SLIM & 可解释规则学习与故障识别 & 宋炳臻 \\
+BARO & 无监督根因定位与服务排序 & 宋炳臻 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -704,10 +704,11 @@ model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
 \end{spacing}
 
 %---------------------------------------------------------------------
-%  第六章 加分项：SLIM与BARO论文复现与对比（宋炳臻）
+%  宋炳臻负责部分：SLIM与BARO论文复现、对比与评估
+%  可直接替换 labx.tex 中宋炳臻负责的SLIM与BARO章节
 %---------------------------------------------------------------------
-\chapter*{加分项：SLIM与BARO论文复现与对比}
-\addcontentsline{toc}{chapter}{加分项：SLIM与BARO论文复现与对比}
+\chapter*{阶段五：SLIM与BARO论文复现、对比与评估}
+\addcontentsline{toc}{chapter}{阶段五：SLIM与BARO论文复现、对比与评估}
 \vspace{-0.5em}
 \begin{flushright}
 {\kaishu\zihao{5} 负责人：宋炳臻（2311740）}
@@ -716,140 +717,240 @@ model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
-\section{SLIM论文复现：日志异常检测}
-\subsection{算法原理}
-SLIM（Sparse Linear Method for Log Anomaly Detection）是一种基于稀疏线性模型的日志异常检测方法。该方法通过对日志序列进行解析和模式提取，构建日志模板的频率向量，利用稀疏表示技术识别偏离正常模式的异常日志序列。
+\section{复现任务概述}
 
-\subsection{实现过程}
-\begin{itemize}
-    \item 使用 Drain 算法对 SockShop 微服务日志进行解析，提取日志模板
-    \item 构建滑动窗口内的日志模板频率向量
-    \item 训练稀疏线性分类器进行异常检测
-    \item 在故障注入场景下评估检测效果
-\end{itemize}
+本部分围绕 SockShop 微服务系统中的故障诊断任务，复现两篇与微服务异常检测和根因定位相关的论文方法。第一部分复现 SLIM 论文中的可解释规则学习思想，将 Prometheus 采集到的 Pod 级监控指标转化为布尔谓词，并学习少量、短规则组成的故障识别规则集。第二部分复现 BARO 论文中的无监督根因定位思想，基于多服务、多指标时间序列进行变点检测、异常评分和服务级根因排序。两项复现均使用本组在 SockShop 系统中通过 ChaosMesh 注入故障并由 Prometheus 采集得到的数据。
 
-\begin{lstlisting}[language=Python]
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import precision_score, recall_score, f1_score
+本部分的实验设计重点关注三个问题：第一，算法的输入和输出形式是否清楚；第二，数据标签或评估标签如何得到，是否参与算法训练；第三，复现结果如何评价，以及针对复现边界可以提出哪些优化建议。由于 SLIM 输出的是时间点级二分类结果，而 BARO 输出的是服务级根因排序结果，因此二者不能简单地只用同一个 F1 指标比较，而应分别使用与任务形式匹配的评价指标。
 
-# SLIM日志异常检测
-class SLIMDetector:
-    def __init__(self, window_size=20):
-        self.window_size = window_size
-        self.model = LogisticRegression(penalty='l1', solver='liblinear')
-    
-    def extract_features(self, log_sequences):
-        # 提取日志模板频率特征
-        # ... 特征提取逻辑
-        pass
-    
-    def fit(self, normal_logs):
-        features = self.extract_features(normal_logs)
-        labels = np.zeros(len(features))
-        self.model.fit(features, labels)
-    
-    def predict(self, test_logs):
-        features = self.extract_features(test_logs)
-        return self.model.predict(features)
+\section{SLIM论文复现：可解释规则学习}
 
-# 训练与评估
-detector = SLIMDetector(window_size=20)
-# ... 训练代码
-\end{lstlisting}
+\subsection{算法目标与输入输出}
 
-\subsection{实验结果}
-\begin{table}[htbp]
+SLIM 在本次复现中被定位为一个监督式规则学习算法。算法目标是从监控指标中学习一组可解释的故障识别规则，用于判断某个目标 Pod 在某个时间点是否处于 Pod Failure 故障状态。与黑盒分类模型不同，SLIM 的输出不是单纯的预测标签，而是由若干布尔条件组成的 IF-THEN 规则集。例如，规则可以表达为“若 CPU 使用率低于某个阈值且内存工作集低于某个阈值，则判断该时间点属于 Pod Failure”。
+
+本次复现没有直接使用日志文本，而是使用 Prometheus 指标近似复现 SLIM 的规则学习核心流程。原始输入为 SockShop 系统在故障注入实验中产生的多指标时间序列，经过预处理后整理为目标 Pod 的时间点级宽表。连续指标进一步被转化为布尔谓词矩阵，作为规则学习算法的直接输入。
+
+\begin{table}[H]
 \centering
-\caption{SLIM算法复现结果}
-\begin{tabular}{cccc}
+\caption{SLIM算法输入、输出与标签说明}
+\begin{tabular}{p{3cm}p{4.2cm}p{6.2cm}}
 \toprule
-\textbf{指标} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+\textbf{项目} & \textbf{本次复现中的形式} & \textbf{说明} \\
 \midrule
-论文报告 & 0.91 & 0.88 & 0.89 \\
-复现结果 & 0.89 & 0.86 & 0.87 \\
+原始输入 & Prometheus 多指标时间序列 & 包括 \texttt{cpu\_rate}、\texttt{memory\_working\_set}、\texttt{restart\_count}、\texttt{restart\_count\_delta} 等运行时指标 \\
+样本级输入 & 目标 Pod 时间点级宽表 & 每一行表示一个采样时间点，每一列表示一个监控指标或派生指标 \\
+算法直接输入 & 二值化谓词矩阵 & 将连续指标转化为 \texttt{metric <= threshold} 或 \texttt{metric > threshold} 形式的布尔条件 \\
+标签 & 故障状态标签 & \texttt{fault} 阶段标为 1，\texttt{baseline} 和 \texttt{recovery} 阶段标为 0，标签参与监督式规则学习 \\
+输出 & IF-THEN 规则集与二分类预测 & 规则用于解释故障信号，预测结果用于计算 Precision、Recall 和 F1 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\section{BARO论文复现：根因分析}
-\subsection{算法原理}
-BARO（Bayesian Root Cause Analysis for Microservice Systems）是一种基于贝叶斯网络的微服务系统根因分析方法。该方法通过构建服务间的因果依赖图，结合实时监控指标，利用贝叶斯推理定位故障的根本原因。
+\subsection{数据构造与标注方法}
 
-\subsection{实现过程}
-\begin{itemize}
-    \item 基于 SockShop 服务调用关系构建因果依赖图
-    \item 收集各服务的性能指标（延迟、错误率、吞吐量等）
-    \item 利用贝叶斯网络进行概率推理，计算各节点为根因的后验概率
-    \item 输出根因排序结果
-\end{itemize}
+实验数据来自 SockShop 的 \texttt{carts} 服务 Pod Failure 故障注入实验。实验过程中，首先记录每轮实验的目标服务、目标 Pod 以及 \texttt{baseline}、\texttt{fault}、\texttt{recovery} 三个阶段的时间边界；随后通过 Prometheus 查询接口导出 CPU、内存和重启次数等指标；最后将原始时间序列转换为目标 Pod 连续特征表。
 
-\begin{lstlisting}[language=Python]
-import numpy as np
-import networkx as nx
-from pgmpy.models import BayesianNetwork
-from pgmpy.inference import VariableElimination
+本次复现的数据标签不是人工逐条标注得到的，而是由故障注入实验的阶段窗口自动生成。处于 \texttt{fault} 窗口内的样本被标记为正类 1，表示故障样本；处于 \texttt{baseline} 和 \texttt{recovery} 窗口内的样本被标记为负类 0，表示非故障样本。该标注方式与实验控制过程一致，能够明确区分故障注入阶段和非故障阶段。
 
-# BARO根因分析
-class BAROAnalyzer:
-    def __init__(self, service_graph):
-        self.graph = service_graph
-        self.model = self._build_bayesian_network()
-    
-    def _build_bayesian_network(self):
-        # 构建贝叶斯网络
-        model = BayesianNetwork()
-        # 添加节点和边
-        # ... 网络构建逻辑
-        return model
-    
-    def analyze(self, metrics_data):
-        # 基于观测数据进行根因推理
-        inference = VariableElimination(self.model)
-        # ... 推理逻辑
-        return root_cause_ranking
+最终得到的连续特征表共有 530 行、30 列，覆盖 10 轮 Pod Failure 实验。其中正类样本 130 个，负类样本 400 个，正类比例约为 24.53\%。为了避免同一轮实验中的相邻时间点同时出现在训练集和测试集中，本实验按照 \texttt{experiment\_id} 进行划分，而不是按行随机划分。前 8 轮实验作为训练集，后 2 轮实验作为测试集。
 
-# 根因分析
-analyzer = BAROAnalyzer(service_graph)
-# ... 分析代码
-\end{lstlisting}
-
-\subsection{实验结果}
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\caption{BARO算法复现结果}
-\begin{tabular}{ccc}
+\caption{SLIM复现实验数据划分}
+\begin{tabular}{ccccc}
 \toprule
-\textbf{指标} & \textbf{Top-1准确率} & \textbf{Top-3准确率} \\
+\textbf{数据部分} & \textbf{实验轮次} & \textbf{样本数} & \textbf{正类数} & \textbf{负类数} \\
 \midrule
-论文报告 & 0.85 & 0.93 \\
-复现结果 & 0.82 & 0.90 \\
+训练集 & \texttt{pf-carts-r01} 至 \texttt{pf-carts-r08} & 424 & 104 & 320 \\
+测试集 & \texttt{pf-carts-r09} 至 \texttt{pf-carts-r10} & 106 & 26 & 80 \\
+合计 & 10 轮实验 & 530 & 130 & 400 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\section{多论文对比分析}
-\begin{table}[htbp]
+\subsection{谓词构造与规则学习实现}
+
+SLIM 的规则学习过程要求输入特征为布尔条件，因此需要先将连续监控指标离散化。本实验仅使用训练集计算 25\%、50\%、75\% 分位数阈值，并将相同阈值应用到测试集，从而避免测试集信息泄漏。每个阈值同时生成“\texttt{<=}”和“\texttt{>}”两个方向的谓词，以同时捕捉故障阶段可能出现的指标下降和指标上升现象。随后删除训练集中取值完全相同的重复二值特征，最终得到 26 个有效二值特征。
+
+在初始实验中，规则集中曾出现 \texttt{seconds\_from\_fault\_start} 等时间字段。该字段虽然有助于区分故障阶段，但它来自实验标注过程，并不是实际运维系统中可直接观测的运行时指标。为了避免数据泄漏，本次复现显式排除了 \texttt{seconds\_from\_fault\_start}、\texttt{seconds\_from\_experiment\_start}、\texttt{seconds\_from\_baseline\_start} 和 \texttt{seconds\_from\_recovery\_start} 等时间辅助字段。排除后，候选规则数为 155 条，经过精确率和召回率过滤后保留 33 条候选规则。
+
+本次复现实现了两个层次的规则学习。简化版首先枚举长度为 1 和 2 的候选规则，单条规则内部使用 AND 逻辑，多条规则之间使用 OR 逻辑，然后以训练集整体 F1 的增量为目标贪心选择规则。增强版进一步近似复现 SLIM 论文中 Algorithm 1/2 的核心思想：外层使用带步数折扣的 distorted marginal gain 近似形式选择规则，内层通过随机初始化和单条件替换局部搜索实现 \texttt{GenerateRule}。两个版本均设置单条规则长度上限为 2，规则集最大规则数为 5。
+
+\begin{table}[H]
 \centering
-\caption{各论文复现结果对比}
-\begin{tabular}{p{3cm}p{3cm}ccc}
+\caption{SLIM两种复现实现方式}
+\begin{tabular}{p{3.2cm}p{4.8cm}p{5.2cm}}
 \toprule
-\textbf{论文} & \textbf{方向} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+\textbf{模块} & \textbf{简化版实现} & \textbf{增强版 Algorithm 1/2 近似实现} \\
 \midrule
-MARINA & KPI异常检测 & 0.93 & 0.90 & 0.91 \\
-SLIM & 日志异常检测 & 0.89 & 0.86 & 0.87 \\
-BARO & 根因分析 & 0.82 & 0.80 & 0.81 \\
+候选规则来源 & 枚举长度为 1 和 2 的全部谓词组合 & 随机初始化规则，并通过单条件替换进行局部搜索 \\
+外层选择目标 & 普通 F1 增量贪心 & distorted marginal gain 近似 \\
+规则长度约束 & 单条规则最多 2 个条件 & 单条规则最多 2 个条件 \\
+规则数量约束 & 规则集最多 5 条规则 & 规则集最多 5 条规则 \\
+复现定位 & 验证规则学习流程是否可行 & 近似复现论文规则生成和规则集选择的核心机制 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{对比结论}
+\subsection{SLIM复现结果与解释}
+
+排除时间泄漏字段后，简化版和增强版在训练集与测试集上的最终分类指标完全一致。训练集上，两者均取得 Precision 0.900000、Recall 0.865385、F1 0.882353 和 Accuracy 0.943396；测试集上，两者均取得 Precision 0.916667、Recall 0.846154、F1 0.880000 和 Accuracy 0.943396。测试集由未参与训练的 \texttt{pf-carts-r09} 和 \texttt{pf-carts-r10} 两轮实验组成，因此该结果说明学习到的规则具有一定跨实验轮次泛化能力。
+
+\begin{table}[H]
+\centering
+\caption{SLIM复现分类结果}
+\begin{tabular}{ccccccccc}
+\toprule
+\textbf{方法} & \textbf{数据集} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+简化版 & train & 90 & 10 & 310 & 14 & 0.900000 & 0.865385 & 0.882353 \\
+简化版 & test & 22 & 2 & 78 & 4 & 0.916667 & 0.846154 & 0.880000 \\
+增强版 & train & 90 & 10 & 310 & 14 & 0.900000 & 0.865385 & 0.882353 \\
+增强版 & test & 22 & 2 & 78 & 4 & 0.916667 & 0.846154 & 0.880000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+增强版最终选择出 4 条规则，并产生 400 条局部搜索记录，说明算法确实执行了多次随机初始化和局部搜索，而不是直接使用枚举结果。最终规则主要围绕 CPU 使用率下降、内存工作集下降和容器重启计数增加三个信号展开，这与 Pod Failure 导致目标服务不可用、容器重启以及资源使用模式突变的机制一致。典型规则包括：
+
 \begin{itemize}
-    \item MARINA 在 KPI 异常检测方面表现最佳，适合用于实时监控场景，能够捕捉多变量之间的复杂关联
-    \item SLIM 对日志异常检测有较好的识别能力，特别适合结构化日志场景，计算效率较高
-    \item BARO 在根因分析方面具有独特优势，能够精确定位故障源头，但构建贝叶斯网络的成本较高
-    \item 三种方法各有侧重，在实际运维中可以结合使用：MARINA 负责异常发现，SLIM 负责日志分析，BARO 负责根因定位
+    \item \texttt{cpu\_rate <= 0.036929 AND memory\_working\_set <= 3.46069e+08}
+    \item \texttt{cpu\_rate <= 0.00257705 AND memory\_working\_set <= 3.67041e+08}
+    \item \texttt{cpu\_rate <= 0.00257705 AND restart\_count > 47}
+    \item \texttt{memory\_working\_set > 2.28849e+08 AND restart\_count\_delta > 0}
 \end{itemize}
+
+从结果看，SLIM 复现较好地保留了“短规则、少规则、可解释”的核心特点。测试集中 TP=22、FP=2、FN=4，说明算法能够识别大多数故障样本，且误报数量较少。召回率没有达到 1.0，主要原因可能是故障刚开始或恢复边界附近的过渡样本在 Prometheus 指标上尚未充分满足当前规则。
+
+\section{BARO论文复现：无监督根因定位}
+
+\subsection{算法目标与输入输出}
+
+BARO 在本次复现中被定位为无监督根因定位算法。与 SLIM 不同，BARO 不学习时间点级二分类规则，而是从多服务、多指标时间序列中发现异常变化，并对可能的根因服务进行排序。它的输出不是“故障/非故障”标签，而是服务级根因候选列表。排序越靠前，表示该服务越可能是故障根因。
+
+本次复现复用了前述 10 轮 \texttt{carts} 服务 Pod Failure 数据，并选择 \texttt{cpu\_rate}、\texttt{memory\_usage}、\texttt{restart\_count\_delta} 等指标构造多变量时间序列。BARO 运行过程中不使用故障标签训练模型，而是直接基于时间序列变化进行变点检测和异常评分。真实根因标签仅在最终评估阶段使用；由于故障由 ChaosMesh 注入到 \texttt{carts} 服务，因此每轮实验的真实根因服务均为 \texttt{carts}。
+
+\begin{table}[H]
+\centering
+\caption{BARO算法输入、输出与评估标签说明}
+\begin{tabular}{p{3cm}p{4.2cm}p{6.2cm}}
+\toprule
+\textbf{项目} & \textbf{本次复现中的形式} & \textbf{说明} \\
+\midrule
+原始输入 & Prometheus 服务级监控指标 & 与 SLIM 复用同一批 SockShop 故障注入实验数据 \\
+算法输入 & 服务 $\times$ 指标 $\times$ 时间的多变量序列 & 按服务和指标组织 CPU、内存、重启变化等时间序列 \\
+训练标签 & 不使用 & BARO 为无监督方法，不依赖标签训练 \\
+评估标签 & 真实根因服务 \texttt{carts} & 标签来自故障注入对象，只用于评估排序结果 \\
+输出 & 变点、异常分数和服务级根因排序 & 用于定位最可疑的根因服务及 Top-k 候选服务 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{算法流程实现}
+
+本次复现将 BARO 的核心流程实现为“变点检测—异常评分—服务汇总—根因排序”四个步骤。首先，将 Prometheus 数据整理为服务、指标和时间三个维度上的多变量序列。其次，对多变量时间序列使用 BOCPD 思想进行异常变点检测，寻找正常状态向异常状态发生明显变化的时间点。随后，使用正常窗口的中位数和 IQR 构造鲁棒基线，并计算故障窗口中指标相对于正常窗口的偏离程度。最后，将指标级异常分数汇总为服务级分数，并按照分数从高到低输出根因服务排名。
+
+\begin{table}[H]
+\centering
+\caption{BARO复现流程}
+\begin{tabular}{p{3cm}p{5.2cm}p{5cm}}
+\toprule
+\textbf{步骤} & \textbf{处理内容} & \textbf{目的} \\
+\midrule
+多变量序列构造 & 将监控数据组织为服务、指标和时间三维结构 & 得到 BARO 的直接算法输入 \\
+变点检测 & 使用多变量 BOCPD 思想检测状态变化点 & 判断异常从何时开始显著影响指标 \\
+鲁棒异常评分 & 使用正常窗口中位数和 IQR 计算故障后偏离度 & 减少极端值对异常评分的影响 \\
+服务级汇总 & 将指标级分数汇总到服务级 & 得到每个服务的根因可疑程度 \\
+根因排序 & 按服务分数降序输出 Top-k 候选 & 评价真实根因是否排在前列 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{BARO复现结果与解释}
+
+由于 BARO 输出的是排序结果，本次复现采用 Top-1、Top-3、Top-5、MRR 和平均检测延迟进行评价。其中，Top-1 表示真实根因是否排在第一名，Top-3 和 Top-5 表示真实根因是否进入前 3 或前 5 个候选服务；MRR 即平均倒数排名，若真实根因在某轮实验中排第 1，则该轮得分为 1，若排第 2，则得分为 0.5；检测延迟用于衡量算法从故障发生到检测出异常变化所需的时间。
+
+\begin{table}[H]
+\centering
+\caption{BARO复现排序结果}
+\begin{tabular}{cc}
+\toprule
+\textbf{评价指标} & \textbf{复现结果} \\
+\midrule
+Top-1 准确率 & 90\% \\
+Top-3 准确率 & 100\% \\
+Top-5 准确率 & 100\% \\
+MRR & 0.95 \\
+平均检测延迟 & 40.5s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+在 10 轮实验中，BARO 有 9 轮将真实根因服务 \texttt{carts} 排在第 1 名，所有轮次中 \texttt{carts} 均进入 Top-3，因此 Top-3 准确率达到 100\%。唯一一次未排在第 1 的情况中，\texttt{catalogue-db} 的 \texttt{memory\_usage} 因正常窗口 IQR 极小而产生较大的偏离度，导致其异常分数高于 \texttt{carts}。但在该轮实验中，\texttt{carts} 仍位于 Top-2，说明算法仍然给出了较高质量的根因候选列表。
+
+\subsection{BARO结果可信度与实验边界分析}
+
+答辩过程中，教师指出 BARO 在本次复现中的 Top-1=90\%、Top-3=100\%、MRR=0.95 等结果偏高，对于根因分析这种复杂任务而言需要进一步解释。该质疑是合理的，因为真实生产环境中的根因分析通常涉及多服务依赖、多故障类型、噪声传播和观测不完整等因素，算法很难在所有场景下都稳定取得接近满分的排序结果。因此，本报告将 BARO 的高指标解释为受控复现实验条件下的结果，而不是将其外推为复杂生产场景中的通用性能。
+
+本次 BARO 结果较高的首要原因是实验场景相对理想化。10 轮实验均为 SockShop 中 \texttt{carts} 服务的 Pod Failure，真实根因服务固定，故障类型也固定。相比多个服务随机发生不同类型故障的场景，单服务、单故障类型会显著降低根因定位难度。其次，Pod Failure 对重启次数、CPU 使用率、内存使用等指标会造成比较直接的变化，根因服务的异常信号较强，服务级异常评分更容易将 \texttt{carts} 排在前列。再次，SockShop 的服务规模有限，参与排序的候选服务数量少于真实大型微服务系统，因此 Top-3 和 Top-5 指标更容易取得较高数值。
+
+此外，本次复现实验使用故障注入过程中的时间窗口信息来划分正常窗口和故障窗口。真实根因标签 \texttt{carts} 没有参与 BARO 的运行和评分，只用于最终计算 Top-k 和 MRR，因此不存在把真实根因标签直接输入算法的情况。但是，正常窗口与故障窗口边界由实验过程给出，会使算法更容易比较故障前后的指标变化。这意味着本次 BARO 复现更接近于“在已知故障注入窗口下验证根因排序流程”，而不是完全未知场景下的端到端在线根因定位。
+
+\begin{table}[H]
+\centering
+\caption{BARO复现结果偏高的原因分析}
+\begin{tabular}{p{3.2cm}p{5.6cm}p{4.6cm}}
+\toprule
+\textbf{影响因素} & \textbf{本次复现中的表现} & \textbf{对结果的影响} \\
+\midrule
+故障对象固定 & 10 轮实验均对 \texttt{carts} 服务注入 Pod Failure & 根因候选模式稳定，排序难度降低 \\
+故障类型单一 & 未混入网络延迟、CPU 压力、内存压力或数据库异常等故障 & 算法更容易捕捉一致的异常变化 \\
+实验环境受控 & 故障注入时间、恢复时间和目标服务均由实验控制 & 正常窗口与故障窗口边界较清晰 \\
+指标响应明显 & Pod Failure 会直接影响重启、CPU 和内存等指标 & 根因服务异常分数更容易突出 \\
+候选服务规模有限 & SockShop 服务数量有限 & Top-3 和 Top-5 更容易覆盖真实根因 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+因此，本报告对 BARO 结果的解释应保持克制：Top-1=90\% 和 MRR=0.95 说明该算法流程在本次受控 Pod Failure 数据集上能够有效工作，但不能直接证明其在多服务、多故障、多噪声的真实生产环境中也能达到同等性能。若要进一步增强结论可信度，后续实验应扩大故障类型和目标服务范围，引入未知故障窗口设置，让算法先自动检测变点和异常区间，再进行根因排序，并在更多轮次的数据上报告平均结果和失败案例。
+
+\section{两篇论文复现结果对比}
+
+由于 SLIM 与 BARO 的任务目标和输出形式不同，二者不适合简单地直接比较 F1。SLIM 是监督式故障状态识别方法，输出时间点级二分类结果，因此适合使用 Precision、Recall 和 F1 评价；BARO 是无监督根因定位方法，输出服务级排序结果，因此更适合使用 Top-k、MRR 和检测延迟评价。基于这一点，本报告采用任务匹配的指标体系进行对比。
+
+\begin{table}[H]
+\centering
+\caption{SLIM与BARO复现任务和评价方式对比}
+\begin{tabular}{p{2.2cm}p{3.2cm}p{3.1cm}p{3.8cm}p{2.4cm}}
+\toprule
+\textbf{方法} & \textbf{任务目标} & \textbf{标签使用方式} & \textbf{输出形式} & \textbf{主要结果} \\
+\midrule
+SLIM & 时间点级 Pod Failure 识别 & \texttt{fault}=1，\texttt{baseline}/\texttt{recovery}=0；标签参与训练和测试 & IF-THEN 规则集与故障/非故障预测 & 测试集 F1=0.88 \\
+BARO & 服务级无监督根因定位 & 运行阶段不使用标签；真实根因 \texttt{carts} 仅用于评估 & 根因服务排序与异常分数 & Top-1=90\%，MRR=0.95 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+从实验结果看，SLIM 能够在 Pod Failure 场景下学习到与故障机理一致的短规则，具有较好的可解释性；BARO 能够在不使用训练标签的情况下将真实根因服务稳定排在前列，具有较好的根因定位能力。二者分别覆盖“故障状态识别”和“根因服务排序”两个层面，可以共同服务于微服务系统维护过程：前者回答“当前时间点是否异常以及哪些指标触发了规则”，后者回答“多个服务中哪个服务最可能是根因”。
+
+\section{评估与优化建议}
+
+\subsection{SLIM复现评估与优化}
+
+本次 SLIM 复现完成了从 Prometheus 原始监控数据到可解释规则集的完整流程，并在测试集上取得 F1=0.88 的结果。其优点是规则数量少、规则长度短、输出可解释，能够直观反映 Pod Failure 引起的 CPU 使用率下降、内存工作集下降和重启次数增加等现象。其主要局限在于：本实验只覆盖 \texttt{carts} 服务的 Pod Failure 单一故障类型，尚未扩展到网络延迟、CPU 压力、内存压力等更多故障；同时，本次复现使用的是 Prometheus 指标，未融合日志、调用链等更多可观测性数据。
+
+后续可以从三方面优化 SLIM 复现。第一，增加故障类型和目标服务，验证规则学习方法在多故障、多服务场景下的泛化能力。第二，引入交叉验证或按实验轮次的多折验证，使阈值选择和规则选择更稳定。第三，可以将 BARO 中的变点检测思想用于 SLIM 的谓词构造层，先自动定位正常状态到异常状态的变化窗口，再基于变化窗口生成候选阈值，从而减少人工阈值设定并提高规则泛化能力。
+
+\subsection{BARO复现评估与优化}
+
+本次 BARO 复现在 10 轮 Pod Failure 实验中取得 Top-1=90\%、Top-3=100\%、MRR=0.95 和平均检测延迟 40.5s 的结果，说明其能够较稳定地将真实根因服务排在前列。BARO 的优点是运行阶段不依赖标注训练集，适合故障类型未知或标注成本较高的场景；同时，排序输出能够为运维人员提供多个候选根因，而不是只给出单一判断。
+
+BARO 的局限主要来自窗口划分和鲁棒统计评分。复现实验中出现过 \texttt{catalogue-db} 因正常窗口 IQR 极小而获得过高异常分数的情况，说明在部分指标波动很小的服务上，单纯使用 IQR 可能放大微小变化。后续可考虑对 IQR 设置下限或进行平滑处理，以降低不稳定分母带来的异常分数放大；也可以引入服务拓扑权重，将调用链上与故障传播路径更相关的服务赋予更高解释优先级；此外，还可以结合自动窗口选择方法，减少人工设置正常窗口和故障窗口对结果的影响。
+
+\section{本部分小结}
+
+本部分完成了 SLIM 和 BARO 两篇论文方法在 SockShop 故障注入数据上的复现。SLIM 部分构造了带标签的时间点级 Pod 监控样本，通过谓词二值化和规则学习得到可解释故障识别规则，并在测试集上取得 F1=0.88。BARO 部分在不使用训练标签的情况下，对多服务、多指标时间序列进行变点检测和异常评分，最终在 10 轮实验中取得 Top-1=90\%、Top-3=100\% 和 MRR=0.95。总体来看，两项复现分别验证了可解释规则学习和无监督根因排序在微服务故障诊断中的有效性，也为后续将二者结合形成更完整的故障检测与根因定位流程提供了基础。
 
 \end{spacing}
 
@@ -872,10 +973,10 @@ BARO & 根因分析 & 0.82 & 0.80 & 0.81 \\
 	MARINA Authors. MARINA: Multi-Variate KPI Anomaly Detection for Microservice Systems. Conference/Journal, Year.
 	
 	\bibitem{slim}
-	SLIM Authors. SLIM: Sparse Linear Method for Log Anomaly Detection. Conference/Journal, Year.
+	SLIM论文及本组复现实验代码与数据处理记录.
 	
 	\bibitem{baro}
-	BARO Authors. BARO: Bayesian Root Cause Analysis for Microservice Systems. Conference/Journal, Year.
+	BARO论文及本组复现实验代码与数据处理记录.
 	
 \end{thebibliography}
 
