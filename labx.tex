@@ -49,6 +49,7 @@
 }
 
 \pagestyle{fancy}
+\setlength{\headheight}{14.5pt}
 \lhead{\kaishu ``软件测试与维护''大作业报告}
 \rhead{\kaishu SockShop微服务系统}
 \cfoot{\thepage}
@@ -184,13 +185,12 @@
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
-\section{Docker环境准备}
-本部分由汪孟坤负责。安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。熟悉容器的基本操作，包括构建（docker build）、运行（docker run）、停止（docker stop）等。
+\section{集群环境搭建}
+安装并配置 Docker Desktop，确保能够通过 Docker 拉取并运行镜像。
 
-\section{Minikube集群搭建}
 在本地机器上搭建 Minikube 集群，通过以下命令启动：
 \begin{lstlisting}[language=bash]
-minikube start --driver=docker --memory=8192 --cpus=4
+minikube start --driver=docker
 kubectl cluster-info
 \end{lstlisting}
 确保可以通过 \texttt{kubectl} 命令管理 Kubernetes 集群。
@@ -214,11 +214,18 @@ kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservi
     \item 查看各服务日志确认正常运行
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=14cm]{figure/calculator.png}
+  \includegraphics[width=14cm]{docs/汪孟坤/minikube集群部署sock-shop微服务系统.png}
   \caption{SockShop微服务系统运行截图}
   \label{fig:sockshop}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/汪孟坤/网页.png}
+  \caption{SockShop微服务系统前端页面}
+  \label{fig:sockshop-web}
 \end{figure}
 
 \section{论文选择与阅读}
@@ -240,7 +247,6 @@ BARO & 无监督根因定位与服务排序 & 宋炳臻 \\
 \end{table}
 
 \subsection{论文阅读重点}
-认真阅读论文，重点关注：
 \begin{itemize}
     \item 论文提出的算法原理与模型架构
     \item 实验设置与数据处理流程
