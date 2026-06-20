@@ -1,7 +1,7 @@
 %!TEX program = xelatex
 \documentclass[a4paper,12pt]{report}
 \usepackage{indentfirst} 
-\usepackage[UTF8, fontset=mac]{ctex}
+\usepackage[UTF8, fontset=windows]{ctex}
 \usepackage{times}
 \usepackage{graphicx,float}
 \usepackage{setspace}
@@ -349,7 +349,7 @@ spec:
 \end{flushright}
 
 \subsection{测试目标}
-本部分由马嘉皓负责。使用 Selenium 对 SockShop 前端界面进行自动化功能测试与性能测试，涵盖用户注册登录、商品浏览选取、结算等完整交互流程，并结合浏览器开发工具与 Lighthouse 对页面性能指标进行评估。
+使用 Selenium 对 SockShop 前端界面进行自动化功能测试与性能测试，涵盖用户注册登录、商品浏览选取、结算等完整交互流程，并结合浏览器开发工具与 Lighthouse 对页面性能指标进行评估。
 
 \subsection{Selenium IDE 功能测试}
 
@@ -454,7 +454,6 @@ Scene-5 & 100 & 10 & 10 & 90 & 稳定性测试 \\
 \end{tabular}
 \end{table}
 
-\subsection{HTTP 请求配置}
 测试计划包含 5 个核心 HTTP 请求，覆盖 SockShop 的主要功能模块：
 
 \begin{table}[htbp]
@@ -608,31 +607,6 @@ Scene-5 & 29 & 9 & 85 & 93 & 364.7 & 0.00\% \\
 
 所有测试场景错误率均为 0.00\%，说明系统在高负载下仍保持高可靠性。
 
-\subsubsection{各接口性能分析（Scene-3）}
-\begin{table}[htbp]
-\centering
-\caption{各接口响应时间对比（100 并发用户）}
-\begin{tabular}{cccc}
-\toprule
-\textbf{接口} & \textbf{平均响应时间(ms)} & \textbf{90\%响应时间(ms)} & \textbf{吞吐量(req/s)} \\
-\midrule
-Get\_Homepage & 17 & 73 & 64.0 \\
-Get\_Category & 16 & 74 & 63.9 \\
-Get\_Orders & 16 & 75 & 63.9 \\
-Get\_Basket & 18 & 79 & 64.0 \\
-Get\_Detail & 16 & 75 & 64.0 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-从各接口性能对比可以看出：
-\begin{itemize}
-    \item 各接口响应时间相近（16-18ms），无明显性能瓶颈，负载均衡良好
-    \item Get\_Basket 响应时间略高（18ms），可能与购物车数据库操作有关
-    \item 所有接口吞吐量均衡（约 64 req/s），说明各微服务处理能力匹配
-\end{itemize}
-
-\subsection{测试结论}
 \begin{itemize}
     \item \textbf{响应时间：} 平均响应时间 7-29ms，远低于目标值 500ms，90\% 请求响应时间 < 85ms
     \item \textbf{吞吐量：} 最高达到 364.7 req/sec，随并发用户数线性增长
@@ -641,6 +615,8 @@ Get\_Detail & 16 & 75 & 64.0 \\
     \item \textbf{最佳并发：} 50 用户时性能最优（平均响应时间 7ms）
     \item \textbf{系统容量：} 当前配置下可稳定支持至少 100 并发用户
 \end{itemize}
+
+综合以上测试结果，SockShop 微服务系统在当前部署环境下整体性能表现优异。从低并发到高并发，系统均能保持毫秒级响应且错误率为零，吞吐量随负载线性增长，未出现性能瓶颈。长时间压力测试下响应时间仅轻微增加，系统运行稳定。总体而言，该系统在响应速度、吞吐量、可靠性和稳定性等方面均表现良好。
 
 \end{spacing}
 

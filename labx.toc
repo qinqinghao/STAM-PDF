@@ -32,12 +32,9 @@
 \contentsline {subsection}{\numberline {13.5}性能指标分析}{12}{subsection.0.13.5}%
 \contentsline {section}{\numberline {14}JMeter性能测试}{13}{section.0.14}%
 \contentsline {subsection}{\numberline {14.1}测试场景设计}{13}{subsection.0.14.1}%
-\contentsline {subsection}{\numberline {14.2}HTTP 请求配置}{13}{subsection.0.14.2}%
-\contentsline {subsection}{\numberline {14.3}测试结果截图}{14}{subsection.0.14.3}%
-\contentsline {subsection}{\numberline {14.4}测试结果分析}{21}{subsection.0.14.4}%
-\contentsline {subsubsection}{各接口性能分析（Scene-3）}{22}{subsubsection*.8}%
-\contentsline {subsection}{\numberline {14.5}测试结论}{22}{subsection.0.14.5}%
-\contentsline {chapter}{阶段四：MARINA算法复现与验证}{23}{chapter*.9}%
+\contentsline {subsection}{\numberline {14.2}测试结果截图}{14}{subsection.0.14.2}%
+\contentsline {subsection}{\numberline {14.3}测试结果分析}{21}{subsection.0.14.3}%
+\contentsline {chapter}{阶段四：MARINA算法复现与验证}{23}{chapter*.8}%
 \contentsline {section}{\numberline {15}数据预处理}{23}{section.0.15}%
 \contentsline {subsection}{\numberline {15.1}数据清洗}{23}{subsection.0.15.1}%
 \contentsline {section}{\numberline {16}MARINA算法复现：KPI异常检测}{23}{section.0.16}%
@@ -47,7 +44,7 @@
 \contentsline {section}{\numberline {17}评估与优化}{25}{section.0.17}%
 \contentsline {subsection}{\numberline {17.1}结果分析}{25}{subsection.0.17.1}%
 \contentsline {subsection}{\numberline {17.2}优化建议}{25}{subsection.0.17.2}%
-\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{26}{chapter*.10}%
+\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{26}{chapter*.9}%
 \contentsline {section}{\numberline {18}复现任务概述}{26}{section.0.18}%
 \contentsline {section}{\numberline {19}SLIM论文复现：可解释规则学习}{26}{section.0.19}%
 \contentsline {subsection}{\numberline {19.1}算法目标与输入输出}{26}{subsection.0.19.1}%
