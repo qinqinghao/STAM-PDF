@@ -19,6 +19,25 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+% YAML 语言支持
+\lstdefinelanguage{yaml}{
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{blue}\bfseries,
+  basicstyle=\ttfamily\small,
+  comment=[l]{\#},
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{green!60!black},
+  morestring=[b]',
+  morestring=[b]",
+  moredelim=[l][\color{orange}]{:},
+  moredelim=[l][\color{purple}]{-},
+  literate={---}{{\textcolor{purple}{---}}}3{>}{{\textcolor{purple}{>}}}1{|}{{\textcolor{purple}{|}}}1,
+  extendedchars=true,
+  breaklines=true,
+  tabsize=2
+}
+
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
 
@@ -110,7 +129,8 @@
 %---------------------------------------------------------------------
 %  第一章 项目概述
 %---------------------------------------------------------------------
-\chapter{项目概述}
+\chapter*{项目概述}
+\addcontentsline{toc}{chapter}{项目概述}
 \setcounter{page}{1}
 \begin{spacing}{1.5}
 \songti\zihao{-4}
@@ -154,7 +174,8 @@
 %---------------------------------------------------------------------
 %  第二章 阶段一：微服务系统部署与论文阅读（汪孟坤）
 %---------------------------------------------------------------------
-\chapter{阶段一：微服务系统部署与论文阅读}
+\chapter*{阶段一：微服务系统部署与论文阅读}
+\addcontentsline{toc}{chapter}{阶段一：微服务系统部署与论文阅读}
 \vspace{-0.5em}
 \begin{flushright}
 {\kaishu\zihao{5} 负责人：汪孟坤（2313277）}
@@ -232,7 +253,8 @@ BARO（加分项） & 根因分析 & 宋炳臻 \\
 %---------------------------------------------------------------------
 %  第三章 阶段二：Prometheus & Grafana 数据采集（王建雄）
 %---------------------------------------------------------------------
-\chapter{阶段二：Prometheus \& Grafana 数据采集与维护}
+\chapter*{阶段二：Prometheus \& Grafana 数据采集与维护}
+\addcontentsline{toc}{chapter}{阶段二：Prometheus \& Grafana 数据采集与维护}
 \vspace{-0.5em}
 \begin{flushright}
 {\kaishu\zihao{5} 负责人：王建雄（2311653）}
@@ -314,7 +336,8 @@ spec:
 %---------------------------------------------------------------------
 %  第四章 阶段三：Selenium \& JMeter 测试
 %---------------------------------------------------------------------
-\chapter{阶段三：Selenium \& JMeter 测试}
+\chapter*{阶段三：Selenium \& JMeter 测试}
+\addcontentsline{toc}{chapter}{阶段三：Selenium \& JMeter 测试}
 
 \begin{spacing}{1.5}
 \songti\zihao{-4}
@@ -381,51 +404,220 @@ driver.quit()
 {\kaishu\zihao{5} 负责人：覃庆浩（2310904）}
 \end{flushright}
 
-\subsection{测试计划设计}
-本部分由覃庆浩负责。在 JMeter 中创建测试计划，设置线程组模拟多个虚拟用户进行并发请求。
+\subsection{测试场景设计}
+设计了 5 个测试场景，覆盖从低负载到高负载的渐进式测试：
 
-\subsection{测试配置}
-\begin{itemize}
-    \item \textbf{线程组：} 设置并发用户数（50、100、200、500）
-    \item \textbf{HTTP请求：} 针对不同微服务模块发送请求
-    \begin{itemize}
-        \item 用户服务：/users、/login
-        \item 订单服务：/orders
-        \item 商品服务：/catalogue
-    \end{itemize}
-    \item \textbf{持续时间：} 每次测试运行 5 分钟
-    \item \textbf{监控指标：} 响应时间、吞吐量、错误率
-\end{itemize}
-
-\subsection{测试结果分析}
 \begin{table}[htbp]
 \centering
-\caption{JMeter性能测试结果}
-\begin{tabular}{ccccc}
+\caption{测试场景配置}
+\begin{tabular}{ccccccc}
 \toprule
-\textbf{并发用户数} & \textbf{平均响应时间(ms)} & \textbf{吞吐量(req/s)} & \textbf{错误率(\%)} & \textbf{P95响应时间(ms)} \\
+\textbf{场景} & \textbf{线程数} & \textbf{Ramp-up(s)} & \textbf{循环次数} & \textbf{持续时间(s)} & \textbf{测试目的} \\
 \midrule
-50 & 120 & 45.2 & 0.1 & 250 \\
-100 & 280 & 38.5 & 0.5 & 520 \\
-200 & 650 & 25.3 & 2.1 & 1200 \\
-500 & 1800 & 12.8 & 8.5 & 3500 \\
+Scene-1 & 10 & 10 & 10 & 30 & 低负载验证 \\
+Scene-2 & 50 & 10 & 10 & 30 & 中负载测试 \\
+Scene-3 & 100 & 10 & 10 & 30 & 高负载压力 \\
+Scene-4 & 100 & 10 & 10 & 60 & 持续压力测试 \\
+Scene-5 & 100 & 10 & 10 & 90 & 稳定性测试 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\begin{figure}[htbp]
+\subsection{HTTP 请求配置}
+测试计划包含 5 个核心 HTTP 请求，覆盖 SockShop 的主要功能模块：
+
+\begin{table}[htbp]
+\centering
+\caption{HTTP 请求列表}
+\begin{tabular}{cccp{5cm}}
+\toprule
+\textbf{请求名称} & \textbf{方法} & \textbf{路径} & \textbf{说明} \\
+\midrule
+Get\_Homepage & GET & / & 访问首页 \\
+Get\_Category & GET & /category.html?page=1\&size=9 & 浏览商品分类 \\
+Get\_Detail & GET & /detail.html?id=\{productId\} & 查看商品详情 \\
+Get\_Basket & GET & /cart & 查看购物车 \\
+Get\_Orders & GET & /orders & 查看订单列表 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{测试结果截图}
+
+\begin{figure}[H]
   \centering
-  \includegraphics[width=14cm]{figure/calculator.png}
-  \caption{JMeter性能测试结果图表}
-  \label{fig:jmeter}
+  \includegraphics[width=14cm]{docs/覃庆浩/Summary Report（10,10,10,30）.png}
+  \caption{Scene-1（10 并发）汇总报告}
+  \label{fig:jmeter-scene1-summary}
 \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Aggregate Report（10,10,10,30）.png}
+  \caption{Scene-1（10 并发）聚合报告}
+  \label{fig:jmeter-scene1-aggregate}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Response Time Graph（10,10,10,30）.png}
+  \caption{Scene-1（10 并发）响应时间图}
+  \label{fig:jmeter-scene1-response}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Summary Report（50,10,10,30）.png}
+  \caption{Scene-2（50 并发）汇总报告}
+  \label{fig:jmeter-scene2-summary}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Aggregate Report（50,10,10,30）.png}
+  \caption{Scene-2（50 并发）聚合报告}
+  \label{fig:jmeter-scene2-aggregate}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Response Time Graph（50,10,10,30）.png}
+  \caption{Scene-2（50 并发）响应时间图}
+  \label{fig:jmeter-scene2-response}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Summary Report（100,10,10,30）.png}
+  \caption{Scene-3（100 并发）汇总报告}
+  \label{fig:jmeter-scene3-summary}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Aggregate Report（100,10,10,30）.png}
+  \caption{Scene-3（100 并发）聚合报告}
+  \label{fig:jmeter-scene3-aggregate}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Response Time Graph（100,10,10,30）.png}
+  \caption{Scene-3（100 并发）响应时间图}
+  \label{fig:jmeter-scene3-response}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Summary Report（100,10,10,60）.png}
+  \caption{Scene-4（100 并发，60 秒）汇总报告}
+  \label{fig:jmeter-scene4-summary}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Aggregate Report（100,10,10,60）.png}
+  \caption{Scene-4（100 并发，60 秒）聚合报告}
+  \label{fig:jmeter-scene4-aggregate}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Response Time Graph（100,10,10,60）.png}
+  \caption{Scene-4（100 并发，60 秒）响应时间图}
+  \label{fig:jmeter-scene4-response}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Summary Report（100,10,10,90）.png}
+  \caption{Scene-5（100 并发，90 秒）汇总报告}
+  \label{fig:jmeter-scene5-summary}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Aggregate Report（100,10,10,90）.png}
+  \caption{Scene-5（100 并发，90 秒）聚合报告}
+  \label{fig:jmeter-scene5-aggregate}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{docs/覃庆浩/Response Time Graph（100,10,10,90）.png}
+  \caption{Scene-5（100 并发，90 秒）响应时间图}
+  \label{fig:jmeter-scene5-response}
+\end{figure}
+
+\subsection{测试结果分析}
+\begin{table}[htbp]
+\centering
+\caption{各场景性能指标汇总}
+\begin{tabular}{ccccccc}
+\toprule
+\textbf{场景} & \textbf{平均响应时间(ms)} & \textbf{中位数(ms)} & \textbf{90\%响应时间(ms)} & \textbf{99\%响应时间(ms)} & \textbf{吞吐量(req/s)} & \textbf{错误率} \\
+\midrule
+Scene-1 & 20 & 21 & 41 & 74 & 15.8 & 0.00\% \\
+Scene-2 & 7 & 3 & 27 & 66 & 163.7 & 0.00\% \\
+Scene-3 & 17 & 5 & 76 & 85 & 319.1 & 0.00\% \\
+Scene-4 & 17 & 5 & 74 & 86 & 272.0 & 0.00\% \\
+Scene-5 & 29 & 9 & 85 & 93 & 364.7 & 0.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+从测试结果可以看出：
+\begin{itemize}
+    \item \textbf{低负载场景（Scene-1）：} 10 并发用户下平均响应时间为 20ms，吞吐量 15.8 req/s，系统资源利用充分，无性能瓶颈
+    \item \textbf{中负载场景（Scene-2）：} 50 并发时性能达到最优，平均响应时间仅 7ms，吞吐量提升至 163.7 req/s，可能是缓存命中率提高或资源利用达到最佳平衡点
+    \item \textbf{高负载场景（Scene-3）：} 100 并发下吞吐量继续提升至 319.1 req/s，平均响应时间 17ms，系统扩展性良好
+    \item \textbf{持续压力场景（Scene-4）：} 延长测试时间至 60 秒后，性能指标与 30 秒测试基本持平，系统在持续压力下表现稳定
+    \item \textbf{稳定性场景（Scene-5）：} 90 秒长时间运行后，响应时间从 17ms 增加到 29ms，吞吐量达到峰值 364.7 req/s，系统具有良好的长期稳定性
+\end{itemize}
+
+所有测试场景错误率均为 0.00\%，说明系统在高负载下仍保持高可靠性。
+
+\subsubsection{各接口性能分析（Scene-3）}
+\begin{table}[htbp]
+\centering
+\caption{各接口响应时间对比（100 并发用户）}
+\begin{tabular}{cccc}
+\toprule
+\textbf{接口} & \textbf{平均响应时间(ms)} & \textbf{90\%响应时间(ms)} & \textbf{吞吐量(req/s)} \\
+\midrule
+Get\_Homepage & 17 & 73 & 64.0 \\
+Get\_Category & 16 & 74 & 63.9 \\
+Get\_Orders & 16 & 75 & 63.9 \\
+Get\_Basket & 18 & 79 & 64.0 \\
+Get\_Detail & 16 & 75 & 64.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+从各接口性能对比可以看出：
+\begin{itemize}
+    \item 各接口响应时间相近（16-18ms），无明显性能瓶颈，负载均衡良好
+    \item Get\_Basket 响应时间略高（18ms），可能与购物车数据库操作有关
+    \item 所有接口吞吐量均衡（约 64 req/s），说明各微服务处理能力匹配
+\end{itemize}
+
+\subsection{测试结论}
+\begin{itemize}
+    \item \textbf{响应时间：} 平均响应时间 7-29ms，远低于目标值 500ms，90\% 请求响应时间 < 85ms
+    \item \textbf{吞吐量：} 最高达到 364.7 req/sec，随并发用户数线性增长
+    \item \textbf{错误率：} 所有测试场景均为 0.00\%，系统可靠性优秀
+    \item \textbf{稳定性：} 90 秒持续压力下响应时间略有增加（17ms → 29ms），但仍在可接受范围内
+    \item \textbf{最佳并发：} 50 用户时性能最优（平均响应时间 7ms）
+    \item \textbf{系统容量：} 当前配置下可稳定支持至少 100 并发用户
+\end{itemize}
 
 \end{spacing}
 
 %---------------------------------------------------------------------
 %  第五章 阶段四：MARINA算法复现与验证（张世隆）
 %---------------------------------------------------------------------
-\chapter{阶段四：MARINA算法复现与验证}
+\chapter*{阶段四：MARINA算法复现与验证}
+\addcontentsline{toc}{chapter}{阶段四：MARINA算法复现与验证}
 \vspace{-0.5em}
 \begin{flushright}
 {\kaishu\zihao{5} 负责人：张世隆（2313877）}
@@ -514,7 +706,8 @@ model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
 %---------------------------------------------------------------------
 %  第六章 加分项：SLIM与BARO论文复现与对比（宋炳臻）
 %---------------------------------------------------------------------
-\chapter{加分项：SLIM与BARO论文复现与对比}
+\chapter*{加分项：SLIM与BARO论文复现与对比}
+\addcontentsline{toc}{chapter}{加分项：SLIM与BARO论文复现与对比}
 \vspace{-0.5em}
 \begin{flushright}
 {\kaishu\zihao{5} 负责人：宋炳臻（2311740）}
@@ -657,64 +850,6 @@ BARO & 根因分析 & 0.82 & 0.80 & 0.81 \\
     \item BARO 在根因分析方面具有独特优势，能够精确定位故障源头，但构建贝叶斯网络的成本较高
     \item 三种方法各有侧重，在实际运维中可以结合使用：MARINA 负责异常发现，SLIM 负责日志分析，BARO 负责根因定位
 \end{itemize}
-
-\end{spacing}
-
-%---------------------------------------------------------------------
-%  第七章 总结与心得体会
-%---------------------------------------------------------------------
-\chapter{总结与心得体会}
-
-\begin{spacing}{1.5}
-\songti\zihao{-4}
-
-\section{项目总结}
-通过本次大作业，我们小组完成了以下工作：
-\begin{itemize}
-    \item 成功在 Minikube 集群上部署了 SockShop 微服务系统
-    \item 配置了 Prometheus 和 Grafana 实现系统监控与数据可视化
-    \item 使用 ChaosMesh 完成了多种故障注入实验
-    \item 使用 Selenium 和 JMeter 完成了功能测试和性能测试
-    \item 复现了四篇异常检测与故障诊断相关论文中的算法
-    \item 完成了多论文结果的对比分析
-\end{itemize}
-
-\section{遇到的问题与解决方案}
-\begin{itemize}
-    \item \textbf{问题一：} Minikube 资源不足导致部分 Pod 启动失败。\\
-    \textbf{解决：} 增加 Minikube 分配的内存和 CPU 资源。
-    
-    \item \textbf{问题二：} Prometheus 抓取目标配置错误。\\
-    \textbf{解决：} 检查 ServiceMonitor 配置，确保标签匹配正确。
-    
-    \item \textbf{问题三：} ChaosMesh 注入故障后服务无法恢复。\\
-    \textbf{解决：} 设置故障持续时间，确保故障能够自动恢复。
-    
-    \item \textbf{问题四：} 论文复现结果与原文存在差距。\\
-    \textbf{解决：} 调整超参数，优化数据预处理流程。
-\end{itemize}
-
-\section{心得体会}
-通过本次大作业，小组成员深入学习了微服务架构的部署与运维，掌握了容器化技术、监控工具、故障注入和自动化测试的实践应用。同时，通过论文复现，加深了对异常检测与故障诊断领域前沿方法的理解，为今后的研究和实践打下了基础。
-
-\section{成员互评}
-\begin{table}[htbp]
-\centering
-\caption{成员互评得分}
-\begin{tabular}{cccccc}
-\toprule
-\textbf{评分人} & \textbf{张三} & \textbf{李四} & \textbf{王五} & \textbf{赵六} & \textbf{孙七} \\
-\midrule
-张三 & - & 90 & 85 & 88 & 92 \\
-李四 & 88 & - & 90 & 85 & 90 \\
-王五 & 85 & 88 & - & 90 & 88 \\
-赵六 & 90 & 85 & 88 & - & 85 \\
-孙七 & 92 & 90 & 85 & 88 & - \\
-\midrule
-\textbf{加权得分} & \textbf{89} & \textbf{88} & \textbf{87} & \textbf{88} & \textbf{89} \\
-\bottomrule
-\end{tabular}
-\end{table}
 
 \end{spacing}
 

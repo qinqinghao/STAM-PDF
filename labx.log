@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.19)  19 JUN 2026 11:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2726,44 +2726,44 @@ n input line 1270.
 LaTeX Encoding Info:    Redeclaring text command \textinterrobangdown (encoding
  TU) on input line 1406.
 )
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 73
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 92
 .
-LaTeX Font Info:    No file TUptm.fd. on input line 73.
+LaTeX Font Info:    No file TUptm.fd. on input line 92.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 73.
+(Font)              using `TU/lmr/m/n' instead on input line 92.
 
 (labx.aux)
 \openout1 = `labx.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 73.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 73
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 92.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 92
 .
  (F:\MiKTex\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -2771,57 +2771,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 73.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 73.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 73.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 73.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 73.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 73.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 73.
-LaTeX Font Info:    Redeclaring math accent \check on input line 73.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 73.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 73.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 73.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 73.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 92.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 92.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 92.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 92.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 92.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 92.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 92.
+LaTeX Font Info:    Redeclaring math accent \check on input line 92.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 92.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 92.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 92.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 92.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 73.
+(Font)              `operators' in the math version `normal' on input line 92.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 73.
+(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 92.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 73.
+(Font)              `operators' in the math version `bold' on input line 92.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 73.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 92.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 73.
+(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 73.
+(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 73.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 73.
+(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 73.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 92.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 73.
+(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 73.
+(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 73.
+(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 92.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 73.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2858,7 +2858,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count349
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 92.
 (labx.out) (labx.out)
 \@outlinefile=\write3
 \openout3 = `labx.out'.
@@ -2868,7 +2868,7 @@ File: figure//nankai.jpg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 82.
+(Font)              using `TU/ptm/m/n' instead on input line 101.
 
 
 Package fontspec Info: 
@@ -2898,7 +2898,7 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 82.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 101.
 
 
 Package fontspec Info: 
@@ -2927,13 +2927,13 @@ Package fontspec Info:
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <16.06> on input line 88.
+(Font)              <16.06> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.05249> on input line 88.
+(Font)              <14.05249> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 88.
+(Font)              <10.53937> on input line 107.
 
-Overfull \hbox (6.33618pt too wide) detected at line 90
+Overfull \hbox (6.33618pt too wide) detected at line 109
 \TU/SimSun(1)/m/n/16.06 作 业 名 称：| 
  []
 
@@ -2964,22 +2964,22 @@ Package fontspec Info:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 91
+Overfull \hbox (6.33618pt too wide) detected at line 110
 \TU/SimSun(1)/m/n/16.06 学 院：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 92
+Overfull \hbox (6.33618pt too wide) detected at line 111
 \TU/SimSun(1)/m/n/16.06 姓 名：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 93
+Overfull \hbox (6.33618pt too wide) detected at line 112
 \TU/SimSun(1)/m/n/16.06 学 号：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 94
+Overfull \hbox (6.33618pt too wide) detected at line 113
 \TU/SimSun(1)/m/n/16.06 指 导 老 师：| 
  []
 
@@ -3015,12 +3015,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
-Chapter 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 125.
+(Font)              <12> on input line 145.
+
 
 LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
-(Font)              using `TU/SimSun(1)/m/n' instead on input line 142.
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 162.
 
 
 Package fontspec Info: 
@@ -3065,15 +3065,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2]
-Chapter 2.
-(F:\MiKTex\tex/latex/listings\lstlang1.sty
+[2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-Overfull \hbox (243.38179pt too wide) in paragraph at lines 185--186
+Overfull \hbox (243.38179pt too wide) in paragraph at lines 206--207
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
@@ -3106,7 +3104,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Chapter 3.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3127,40 +3124,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7] (F:\MiKTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-(F:\MiKTex\tex/latex/listings\lstlang2.sty
-File: lstlang2.sty 2025/11/14 1.11b listings language file
-)
-(F:\MiKTex\tex/latex/listings\lstlang3.sty
-File: lstlang3.sty 2025/11/14 1.11b listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.290 \begin{lstlisting}[language=yaml]
-                                       
-The following languages weren't loadable:
-    ,yaml$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language yaml undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.290 \begin{lstlisting}[language=yaml]
-                                       
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3168,9 +3132,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
-Chapter 4.
-(F:\MiKTex\tex/latex/listings\lstlang1.sty
+[8] (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 
@@ -3194,8 +3156,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
-File: figure/calculator.png Graphic file (type bmp)
-<figure/calculator.png>
+File: docs/覃庆浩/Summary Report（10,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Summary Report（10,10,10,30）.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3205,6 +3167,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
+File: docs/覃庆浩/Aggregate Report（10,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Aggregate Report（10,10,10,30）.png>
+File: docs/覃庆浩/Response Time Graph（10,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Response Time Graph（10,10,10,30）.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3213,7 +3180,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-Chapter 5.
+File: docs/覃庆浩/Summary Report（50,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Summary Report（50,10,10,30）.png>
+File: docs/覃庆浩/Aggregate Report（50,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Aggregate Report（50,10,10,30）.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3221,9 +3192,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13
+[13]
+File: docs/覃庆浩/Response Time Graph（50,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Response Time Graph（50,10,10,30）.png>
+File: docs/覃庆浩/Summary Report（100,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Summary Report（100,10,10,30）.png>
 
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3232,6 +3206,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
+File: docs/覃庆浩/Aggregate Report（100,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Aggregate Report（100,10,10,30）.png>
+File: docs/覃庆浩/Response Time Graph（100,10,10,30）.png Graphic file (type bmp)
+<docs/覃庆浩/Response Time Graph（100,10,10,30）.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3240,7 +3219,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-Chapter 6.
+File: docs/覃庆浩/Summary Report（100,10,10,60）.png Graphic file (type bmp)
+<docs/覃庆浩/Summary Report（100,10,10,60）.png>
+File: docs/覃庆浩/Aggregate Report（100,10,10,60）.png Graphic file (type bmp)
+<docs/覃庆浩/Aggregate Report（100,10,10,60）.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3248,9 +3231,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16
+[16]
+File: docs/覃庆浩/Response Time Graph（100,10,10,60）.png Graphic file (type bmp)
+<docs/覃庆浩/Response Time Graph（100,10,10,60）.png>
+File: docs/覃庆浩/Summary Report（100,10,10,90）.png Graphic file (type bmp)
+<docs/覃庆浩/Summary Report（100,10,10,90）.png>
 
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3259,6 +3245,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
+File: docs/覃庆浩/Aggregate Report（100,10,10,90）.png Graphic file (type bmp)
+<docs/覃庆浩/Aggregate Report（100,10,10,90）.png>
+File: docs/覃庆浩/Response Time Graph（100,10,10,90）.png Graphic file (type bmp)
+<docs/覃庆浩/Response Time Graph（100,10,10,90）.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3267,6 +3258,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
+Overfull \hbox (115.2233pt too wide) in paragraph at lines 556--567
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3275,7 +3270,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-Chapter 7.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3283,7 +3277,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20
+[20]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21
 
 ]
 
@@ -3293,8 +3295,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
-Underfull \hbox (badness 3260) in paragraph at lines 728--729
+[22]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27]
+Underfull \hbox (badness 3260) in paragraph at lines 863--864
 []\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
 [][][][][] [] [] [] [][][][][][] [] [][][] []
  []
@@ -3306,7 +3350,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22
+[28
 
 ] (labx.aux)
  ***********
@@ -3318,15 +3362,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `labx.out' has not changed.
-(rerunfilecheck)             Checksum: D0324F9BA2B636B7C86A44960D26312E;6782.
+(rerunfilecheck)             Checksum: 63A9FAEBE9E0D7E8EEAC4264E2FEF70C;6611.
  ) 
 Here is how much of TeX's memory you used:
- 23369 strings out of 402987
- 458626 string characters out of 5455769
- 1105668 words of memory out of 5000000
- 51769 multiletter control sequences out of 15000+600000
- 636578 words of font info for 122 fonts, out of 8000000 for 9000
+ 23572 strings out of 402987
+ 470002 string characters out of 5455769
+ 1106421 words of memory out of 5000000
+ 51963 multiletter control sequences out of 15000+600000
+ 636586 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,363b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,363b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on labx.pdf (25 pages).
+Output written on labx.pdf (31 pages).
