@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 02:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 02:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3138,107 +3138,107 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 ] [28] [29] [30
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
 []|\TU/SimSun(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/SimSun(0)/m/n/12 、| \TU/
 pcr/m/n/12 mem-
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 856--857
+Underfull \hbox (badness 3219) in paragraph at lines 849--850
 []|\TU/SimSun(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
  []
 
 [31]
-Overfull \hbox (46.53015pt too wide) in paragraph at lines 889--890
+Overfull \hbox (46.53015pt too wide) in paragraph at lines 882--883
 \TU/SimSun(1)/m/n/12.045 为 了 避 免 数 据 泄 漏，|  本 次 复 现 显 式 排 除 了 \TU/pcr/m/n/12.04
 5 seconds_from_fault_start\TU/SimSun(1)/m/n/12.045 、| \TU/pcr/m/n/12.045 second
 s_from_experiment_start\TU/SimSun(1)/m/n/12.045 、|
  []
 
 [32] [33]
-Underfull \hbox (badness 6961) in paragraph at lines 958--959
+Underfull \hbox (badness 6961) in paragraph at lines 951--952
 []|\TU/SimSun(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 975--976
+Underfull \hbox (badness 1527) in paragraph at lines 968--969
 []|\TU/SimSun(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 976--977
+Underfull \hbox (badness 1527) in paragraph at lines 969--970
 []|\TU/SimSun(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 977--978
+Underfull \hbox (badness 1527) in paragraph at lines 970--971
 []|\TU/SimSun(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 978--979
+Underfull \hbox (badness 1527) in paragraph at lines 971--972
 []|\TU/SimSun(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
  []
 
 [34] [35]
-Underfull \hbox (badness 2503) in paragraph at lines 1021--1022
+Underfull \hbox (badness 2503) in paragraph at lines 1014--1015
 []|\TU/SimSun(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1022--1023
+Underfull \hbox (badness 2503) in paragraph at lines 1015--1016
 []|\TU/SimSun(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1023--1024
+Underfull \hbox (badness 2503) in paragraph at lines 1016--1017
 []|\TU/SimSun(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1024--1024
+Underfull \hbox (badness 2293) in paragraph at lines 1017--1017
 []|\TU/SimSun(0)/m/n/12 候 选 服 务 规 模 有
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
 []|\TU/SimSun(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
 []|\TU/pcr/m/n/12 fault=1\TU/SimSun(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
 \TU/pcr/m/n/12 line/recovery=0\TU/SimSun(0)/m/n/12 ；|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
 []|\TU/SimSun(0)/m/n/12 测 试 集
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1043--1043
+Underfull \hbox (badness 2293) in paragraph at lines 1036--1036
 []|\TU/SimSun(0)/m/n/12 服 务 级 无 监 督 根
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
 []|\TU/pcr/m/n/12 Top-1=90%\TU/SimSun(0)/m/n/12 ，|
  []
 
 [37] [38]
-Underfull \hbox (badness 3260) in paragraph at lines 1073--1074
+Underfull \hbox (badness 3260) in paragraph at lines 1066--1067
 []\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
 [][][][][] [] [] [] [][][][][][] [] [][][] []
  []
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1082.
+(Font)              using `TU/ptm/m/n' instead on input line 1075.
 
 [39
 
@@ -3257,10 +3257,10 @@ Package rerunfilecheck Info: File `labx.out' has not changed.
 Here is how much of TeX's memory you used:
  23732 strings out of 402987
  478368 string characters out of 5455769
- 1102439 words of memory out of 5000000
+ 1096299 words of memory out of 5000000
  52111 multiletter control sequences out of 15000+600000
  636594 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,414b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,414b,2171s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on labx.pdf (43 pages).
