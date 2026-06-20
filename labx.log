@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 18:42
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.20)  20 JUN 2026 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./labx.tex
-(labx.tex
+**labx.tex
+(./labx.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-24>
-(F:\MiKTex\tex/latex/base\report.cls
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(F:\MiKTex\tex/latex/base\size12.clo
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count271
@@ -24,13 +24,14 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(F:\MiKTex\tex/latex/tools\indentfirst.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (F:\MiKTex\tex/latex/ctex\ctex.sty
-(F:\MiKTex\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-12-24 L3 programming layer (loader) 
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/ctex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
 
-(F:\MiKTex\tex/latex/l3backend\l3backend-xetex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count280
 \g__pdfannot_backend_int=\count281
@@ -38,13 +39,16 @@ File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 ))
 Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
 
-(F:\MiKTex\tex/latex/ctex\ctexhook.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
-) (F:\MiKTex\tex/latex/ctex\ctexpatch.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
-) (F:\MiKTex\tex/latex/base\fix-cm.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
- (F:\MiKTex\tex/latex/base\ts1enc.def
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1)
@@ -308,16 +312,16 @@ t line 194.
 \g__ctex_section_depth_int=\count284
 \g__ctex_font_size_int=\count285
 
-(F:\MiKTex\tex/latex/ctex/config\ctexopts.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
 )
-(F:\MiKTex\tex/latex/ctex/engine\ctex-engine-xetex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
 File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
-
-(F:\MiKTex\tex/xelatex/xecjk\xeCJK.sty
+(/usr/local/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
 
-(F:\MiKTex\tex/latex/l3packages/xtemplate\xtemplate.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
+y
 Package: xtemplate 2025-10-09 L3 Experimental prototype document functions
 )
 \l__xeCJK_tmp_int=\count286
@@ -380,14 +384,13 @@ LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count296
 \l__xeCJK_verb_case_int=\count297
 \l__xeCJK_verb_exspace_skip=\skip57
-
-(F:\MiKTex\tex/latex/fontspec\fontspec.sty
-(F:\MiKTex\tex/latex/l3packages/xparse\xparse.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 
-(F:\MiKTex\tex/latex/fontspec\fontspec-xetex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count298
@@ -405,11 +408,11 @@ X
 \l__fontspec_tmpb_dim=\dimen178
 \l__fontspec_tmpc_dim=\dimen179
 
-(F:\MiKTex\tex/latex/base\fontenc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
-(F:\MiKTex\tex/latex/fontspec\fontspec.cfg)))
-(F:\MiKTex\tex/xelatex/xecjk\xeCJK.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
 \ccwd=\dimen180
@@ -417,87 +420,97 @@ File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 )
 \l__ctex_ziju_dim=\dimen181
 
-(F:\MiKTex\tex/latex/zhnumber\zhnumber.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
 \l__zhnum_scale_int=\count309
 \l__zhnum_tmp_int=\count310
 
-(F:\MiKTex\tex/latex/zhnumber\zhnumber-utf8.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
 ))
-(F:\MiKTex\tex/latex/ctex/scheme\ctex-scheme-chinese.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.d
+ef
 File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CT
 EX)
-
-(F:\MiKTex\tex/latex/ctex/config\ctex-name-utf8.cfg
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
 File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 ))
-(F:\MiKTex\tex/latex/ctex/fontset\ctex-fontset-windows.def
-File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTE
-X)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
+File: ctex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.
+def
+File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yos
+emite or earlier version (CTEX)
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STSong'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'SimSun(0)' created for font 'SimSun' with
+(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
 (fontspec)             options
-(fontspec)             [Script={CJK},BoldFont={SimHei},ItalicFont={KaiTi}].
+(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
 
-))
-(F:\MiKTex\tex/latex/ctex/config\ctex.cfg
+))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
 )
-(F:\MiKTex\tex/latex/psnfss\times.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-(F:\MiKTex\tex/latex/graphics\graphicx.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(F:\MiKTex\tex/latex/graphics\keyval.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(F:\MiKTex\tex/latex/graphics\graphics.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(F:\MiKTex\tex/latex/graphics\trig.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(F:\MiKTex\tex/latex/graphics-cfg\graphics.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 
-(F:\MiKTex\tex/latex/graphics-def\xetex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen182
 \Gin@req@width=\dimen183
 )
-(F:\MiKTex\tex/latex/float\float.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count311
 \float@exts=\toks18
@@ -505,10 +518,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box57
 )
-(F:\MiKTex\tex/latex/setspace\setspace.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(F:\MiKTex\tex/latex/fancyhdr\fancyhdr.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip59
@@ -527,14 +540,15 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip72
 \@temptokenb=\toks20
 )
-(F:\MiKTex\tex/latex/wrapfig\wrapfig.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen184
 \WF@size=\dimen185
 \c@WF@wrappedlines=\count312
 \WF@box=\box58
 \WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
-) (F:\MiKTex\tex/latex/tools\array.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen186
 \ar@mcellbox=\box59
@@ -543,21 +557,29 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip73
 \backup@length=\skip74
 \ar@cellbox=\box60
-) (F:\MiKTex\tex/xelatex/xunicode\xunicode.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
 
-(F:\MiKTex\tex/latex/tipa\t3enc.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Microsoft YaHei Bold/I" (it
-(fontspec)             probably doesn't exist).
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STXihei'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Microsoft YaHei/I" (it probably
-(fontspec)             doesn't exist).
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STXihei/I" (it probably doesn't
+(fontspec)             exist).
 
 LaTeX Font Info:    Trying to load font information for TU+phv on input line 35
 7.
@@ -569,19 +591,18 @@ LaTeX Font Warning: Font shape `TU/phv/m/n' undefined
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'MicrosoftYaHei(0)' created for font
-(fontspec)             'Microsoft YaHei' with options
-(fontspec)             [Script={CJK},BoldFont={* Bold}].
+(fontspec)             Font family 'STXihei(0)' created for font 'STXihei'
+(fontspec)             with options [Script={CJK},BoldFont={STHeiti}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Microsoft
-(fontspec)             YaHei/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Microsoft YaHei
-(fontspec)             Bold/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Microsoft
-(fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STXihei/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"STXihei/BI/OT:script=hani;language=dflt;"
 
 )
 \tipaTiiicode=\count313
@@ -601,24 +622,24 @@ LaTeX Encoding Info:    Redeclaring text command \hbar (encoding TU) on input l
 ine 3636.
 LaTeX Encoding Info:    Redeclaring text command \textaolig (encoding TU) on in
 put line 3729.
-) (F:\MiKTex\tex/latex/xltxtra\xltxtra.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
 Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
 
-(F:\MiKTex\tex/generic/iftex\ifluatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 
-(F:\MiKTex\tex/generic/iftex\iftex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-(F:\MiKTex\tex/generic/iftex\ifxetex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(F:\MiKTex\tex/latex/realscripts\realscripts.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/realscripts/realscripts.sty
 Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
 ts
 \subsupersep=\dimen188
 )
-(F:\MiKTex\tex/latex/metalogo\metalogo.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/metalogo/metalogo.sty
 Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
 \xl@everylogo=\toks25
 \xl@@everylogo=\toks26
@@ -631,7 +652,7 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 \l__xetex_show_hyphens_final_box=\box63
 \g__xetex_show_hyphens_word_box=\box64
 )
-(F:\MiKTex\tex/latex/titlesec\titlesec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box65
 \beforetitleunit=\skip75
@@ -643,20 +664,20 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen192
 \titlewidthfirst=\dimen193
 )
-(F:\MiKTex\tex/latex/titlesec\titletoc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2025/01/04 v2.17 TOC entries
 \ttl@leftsep=\dimen194
 )
-(F:\MiKTex\tex/latex/appendix\appendix.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count314
 \c@@ppsavesec=\count315
 \c@@ppsaveapp=\count316
 )
-(F:\MiKTex\tex/latex/geometry\geometry.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
 
-(F:\MiKTex\tex/generic/iftex\ifvtex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count317
@@ -671,12 +692,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen257
 \Gm@layoutvoffset=\dimen258
 \Gm@dimlist=\toks28
-
-(F:\MiKTex\tex/latex/geometry\geometry.cfg)) (F:\MiKTex\tex/latex/cite\cite.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (F:\MiKTex\tex/latex/listings\listings.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count320
 \lst@gtempboxa=\box66
 \lst@token=\toks29
@@ -690,21 +712,21 @@ Package: cite 2015/02/27  v 5.5
 \lst@lineno=\count325
 \lst@maxwidth=\dimen262
 
-(F:\MiKTex\tex/latex/listings\lstpatch.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-(F:\MiKTex\tex/latex/listings\lstmisc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count326
 \lst@skipnumbers=\count327
 \lst@framebox=\box67
 )
-(F:\MiKTex\tex/latex/listings\listings.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
 
-(F:\MiKTex\tex/xelatex/xecjk\xeCJK-listings.sty
+(/usr/local/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count328
 \l__xeCJK_listings_flag_int=\count329
@@ -715,7 +737,7 @@ Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-(F:\MiKTex\tex/latex/booktabs\booktabs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen263
 \lightrulewidth=\dimen264
@@ -735,54 +757,54 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count333
 \@thisrulewidth=\dimen275
 )
-(F:\MiKTex\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(F:\MiKTex\tex/latex/kvsetkeys\kvsetkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(F:\MiKTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(F:\MiKTex\tex/generic/pdfescape\pdfescape.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(F:\MiKTex\tex/generic/ltxcmds\ltxcmds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(F:\MiKTex\tex/generic/pdftexcmds\pdftexcmds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(F:\MiKTex\tex/generic/infwarerr\infwarerr.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
-(F:\MiKTex\tex/latex/hycolor\hycolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(F:\MiKTex\tex/latex/hyperref\nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
-(F:\MiKTex\tex/latex/refcount\refcount.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(F:\MiKTex\tex/generic/gettitlestring\gettitlestring.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(F:\MiKTex\tex/latex/kvoptions\kvoptions.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count334
 )
-(F:\MiKTex\tex/latex/etoolbox\etoolbox.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count335
 )
-(F:\MiKTex\tex/generic/stringenc\stringenc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
@@ -790,21 +812,21 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \Hy@linkcounter=\count336
 \Hy@pagecounter=\count337
 
-(F:\MiKTex\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 )
-(F:\MiKTex\tex/generic/intcalc\intcalc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count338
 
-(F:\MiKTex\tex/latex/hyperref\puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 
-(F:\MiKTex\tex/latex/greek-fontenc\puenc-greek.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
 File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
 
-(F:\MiKTex\tex/latex/greek-fontenc\greek-fontenc.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 )
 LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
@@ -813,73 +835,72 @@ LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
 LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on inpu
 t line 1176.
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4066.
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Option `unicode' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
+Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count339
-
-(F:\MiKTex\tex/latex/url\url.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
+LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen277
- (F:\MiKTex\tex/generic/bitset\bitset.sty
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(F:\MiKTex\tex/generic/bigintcalc\bigintcalc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count340
 \Field@Width=\dimen278
 \Fld@charsize=\dimen279
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
 \Hy@abspage=\count341
 \c@Item=\count342
 \c@Hfootnote=\count343
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
-(F:\MiKTex\tex/latex/hyperref\hxetex.def
-File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
 \pdfm@box=\box68
 \c@Hy@AnnotLevel=\count344
 \HyField@AnnotCount=\count345
 \Fld@listcount=\count346
 \c@bookmark@seq@number=\count347
 
-(F:\MiKTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(F:\MiKTex\tex/generic/uniquecounter\uniquecounter.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip77
-)
-(F:\MiKTex\tex/latex/xcolor\xcolor.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(F:\MiKTex\tex/latex/graphics-cfg\color.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 274.
 
-(F:\MiKTex\tex/latex/graphics\mathcolor.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
@@ -888,7 +909,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (mcode.sty
+)
+(./mcode.sty
 -- Package: `mcode' 2.7 <2015/11/11> --
 Package: mcode 2015/11/11 2.7
  - settings optimized for display (colour formating)
@@ -904,13 +926,13 @@ LaTeX Font Info:    No file TUpcr.fd. on input line 230.
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 230.
 
-) (F:\MiKTex\tex/xelatex/xecjk\xunicode-addon.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
 Package: xunicode-addon 2022/08/05 v3.9.1 addon file for xunicode
 \l__xunadd_tmp_coffin=\box70
 \l__xunadd_circle_coffin=\box71
 \l_xunadd_slot_int=\count348
 )
-(F:\MiKTex\tex/xelatex/xunicode\xunicode.sty
+(/usr/local/texlive/2026/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
 
@@ -2569,7 +2591,7 @@ LaTeX Encoding Info:    Redeclaring text command \textcapitalsaltillo (encoding
  TU) on input line 3756.
 LaTeX Encoding Info:    Redeclaring text command \textsaltillo (encoding TU) on
  input line 3757.
-) (F:\MiKTex\tex/xelatex/xecjk\xunicode-extra.def
+) (/usr/local/texlive/2026/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
 File: xunicode-extra.def 2022/08/05 v3.9.1 extra definition for xunicode
 LaTeX Encoding Info:    Redeclaring text command \textsuperscript (encoding TU)
  on input line 37.
@@ -2734,7 +2756,7 @@ LaTeX Font Info:    No file TUptm.fd. on input line 92.
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 92.
 
-(labx.aux)
+(./labx.aux)
 \openout1 = `labx.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -2756,7 +2778,7 @@ LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 92
 .
- (F:\MiKTex\tex/latex/tipa\t3cmr.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 92.
@@ -2859,7 +2881,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 \c@lstlisting=\count349
 Package hyperref Info: Link coloring OFF on input line 92.
-(labx.out) (labx.out)
+(./labx.out) (./labx.out)
 \@outlinefile=\write3
 \openout3 = `labx.out'.
 
@@ -2872,59 +2894,73 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STHeiti'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STHeiti/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STHeiti/B" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             Font family 'STHeiti(0)' created for font 'STHeiti'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+
+
+LaTeX Font Warning: Font shape `TU/STHeiti(0)/b/n' undefined
+(Font)              using `TU/STHeiti(0)/m/n' instead on input line 101.
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STSong'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
 (fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             Could not resolve font "STSong/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STSong(1)' created for font 'STSong' with
 (fontspec)             options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
-
-
-LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 101.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/B" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
-(fontspec)             options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <16.06> on input line 107.
@@ -2933,120 +2969,72 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.53937> on input line 107.
 
-Overfull \hbox (6.33618pt too wide) detected at line 109
-\TU/SimSun(1)/m/n/16.06 作 业 名 称：| 
+Overfull \hbox (8.03pt too wide) detected at line 109
+\TU/STSong(1)/m/n/16.06 作 业 名 称：| 
  []
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "KaiTi/BI" (it probably doesn't
-(fontspec)             exist).
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STKaiti'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "KaiTi/B" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "KaiTi/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'KaiTi(0)' created for font 'KaiTi' with
-(fontspec)             options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
-
-
-Overfull \hbox (6.33618pt too wide) detected at line 110
-\TU/SimSun(1)/m/n/16.06 学 院：| 
- []
-
-
-Overfull \hbox (6.33618pt too wide) detected at line 111
-\TU/SimSun(1)/m/n/16.06 姓 名：| 
- []
-
-
-Overfull \hbox (6.33618pt too wide) detected at line 112
-\TU/SimSun(1)/m/n/16.06 学 号：| 
- []
-
-
-Overfull \hbox (6.33618pt too wide) detected at line 113
-\TU/SimSun(1)/m/n/16.06 指 导 老 师：| 
- []
-
-[1
-
-] (labx.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12.045> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[1
-
-])
-\tf@toc=\write4
-\openout4 = `labx.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 145.
-
-
-LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
-(Font)              using `TU/SimSun(1)/m/n' instead on input line 162.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/BI" (it probably
+(fontspec)             Could not resolve font "STKaiti/BI" (it probably
 (fontspec)             doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
+(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
+(fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
+(fontspec)             Could not resolve font "STKaiti/I" (it probably doesn't
+(fontspec)             exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             Font family 'STKaiti(0)' created for font 'STKaiti'
 (fontspec)             with options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
+
+
+Overfull \hbox (8.03pt too wide) detected at line 110
+\TU/STSong(1)/m/n/16.06 学 院：| 
+ []
+
+
+Overfull \hbox (8.03pt too wide) detected at line 111
+\TU/STSong(1)/m/n/16.06 姓 名：| 
+ []
+
+
+Overfull \hbox (8.03pt too wide) detected at line 112
+\TU/STSong(1)/m/n/16.06 学 号：| 
+ []
+
+
+Overfull \hbox (8.03pt too wide) detected at line 113
+\TU/STSong(1)/m/n/16.06 指 导 老 师：| 
+ []
+
+[1
+
+] (./labx.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12.045> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3065,10 +3053,80 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
+[2])
+\tf@toc=\write4
+\openout4 = `labx.toc'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 145.
+
+
+LaTeX Font Warning: Font shape `TU/STSong(1)/b/n' undefined
+(Font)              using `TU/STSong(1)/m/n' instead on input line 162.
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STFangsong'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STFangsong(0)' created for font
+(fontspec)             'STFangsong' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2] (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-(F:\MiKTex\tex/latex/listings\lstlang1.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Overfull \hbox (243.38179pt too wide) in paragraph at lines 206--207
@@ -3132,9 +3190,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8] (F:\MiKTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
+[8]
+File: docs/马嘉皓/图片 1.jpg Graphic file (type bmp)
+<docs/马嘉皓/图片 1.jpg>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3145,8 +3204,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [9
 
 ]
-File: figure/calculator.png Graphic file (type bmp)
-<figure/calculator.png>
+File: docs/马嘉皓/图片 2.png Graphic file (type bmp)
+<docs/马嘉皓/图片 2.png>
+File: docs/马嘉皓/图片 3.png Graphic file (type bmp)
+<docs/马嘉皓/图片 3.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3156,6 +3217,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
+File: docs/马嘉皓/图片 4.png Graphic file (type bmp)
+<docs/马嘉皓/图片 4.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+Underfull \hbox (badness 1527) in paragraph at lines 416--417
+[]|\TU/STSong(0)/m/n/12 页 面 元 素 加 载 时 发 生 明 显
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 420--421
+[]|\TU/STSong(0)/m/n/12 页 面 视 觉 内 容 填 充 速 度 较
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
 File: docs/覃庆浩/Summary Report（10,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（10,10,10,30）.png>
 
@@ -3166,7 +3255,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
+[13]
 File: docs/覃庆浩/Aggregate Report（10,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（10,10,10,30）.png>
 File: docs/覃庆浩/Response Time Graph（10,10,10,30）.png Graphic file (type bmp)
@@ -3179,7 +3268,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[14]
 File: docs/覃庆浩/Summary Report（50,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（50,10,10,30）.png>
 File: docs/覃庆浩/Aggregate Report（50,10,10,30）.png Graphic file (type bmp)
@@ -3192,7 +3281,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
+[15]
 File: docs/覃庆浩/Response Time Graph（50,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（50,10,10,30）.png>
 File: docs/覃庆浩/Summary Report（100,10,10,30）.png Graphic file (type bmp)
@@ -3205,7 +3294,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]
+[16]
 File: docs/覃庆浩/Aggregate Report（100,10,10,30）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（100,10,10,30）.png>
 File: docs/覃庆浩/Response Time Graph（100,10,10,30）.png Graphic file (type bmp)
@@ -3218,7 +3307,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]
+[17]
 File: docs/覃庆浩/Summary Report（100,10,10,60）.png Graphic file (type bmp)
 <docs/覃庆浩/Summary Report（100,10,10,60）.png>
 File: docs/覃庆浩/Aggregate Report（100,10,10,60）.png Graphic file (type bmp)
@@ -3231,7 +3320,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
+[18]
 File: docs/覃庆浩/Response Time Graph（100,10,10,60）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（100,10,10,60）.png>
 File: docs/覃庆浩/Summary Report（100,10,10,90）.png Graphic file (type bmp)
@@ -3244,7 +3333,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]
+[19]
 File: docs/覃庆浩/Aggregate Report（100,10,10,90）.png Graphic file (type bmp)
 <docs/覃庆浩/Aggregate Report（100,10,10,90）.png>
 File: docs/覃庆浩/Response Time Graph（100,10,10,90）.png Graphic file (type bmp)
@@ -3257,8 +3346,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
-Overfull \hbox (115.2233pt too wide) in paragraph at lines 556--567
+[20]
+Overfull \hbox (115.2233pt too wide) in paragraph at lines 587--598
  [][] 
  []
 
@@ -3269,7 +3358,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[21]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3277,7 +3366,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
+[22] (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3285,7 +3376,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21
+[23
 
 ]
 
@@ -3295,25 +3386,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24
-
-]
+[24]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -3329,18 +3402,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+[26
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+[]|\TU/STSong(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/STSong(0)/m/n/12 、| \TU/
+pcr/m/n/12 mem-
+ []
 
-[27]
-Underfull \hbox (badness 3260) in paragraph at lines 863--864
-[]\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
-[][][][][] [] [] [] [][][][][][] [] [][][] []
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+\TU/pcr/m/n/12 ory_working_set\TU/STSong(0)/m/n/12 、| \TU/pcr/m/n/12 restart_co
+unt\TU/STSong(0)/m/n/12 、|
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 774--775
+[]|\TU/STSong(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
  []
 
 
@@ -3350,9 +3428,160 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28
+[27]
+Overfull \hbox (46.73793pt too wide) in paragraph at lines 807--808
+\TU/STSong(1)/m/n/12.045 为 了 避 免 数 据 泄 漏，|  本 次 复 现 显 式 排 除 了 \TU/pcr/m/n/12.04
+5 seconds_from_fault_start\TU/STSong(1)/m/n/12.045 、| \TU/pcr/m/n/12.045 second
+s_from_experiment_start\TU/STSong(1)/m/n/12.045 、|
+ []
 
-] (labx.aux)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+Underfull \hbox (badness 6961) in paragraph at lines 876--877
+[]|\TU/STSong(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 893--894
+[]|\TU/STSong(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 894--895
+[]|\TU/STSong(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 895--896
+[]|\TU/STSong(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 896--897
+[]|\TU/STSong(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+Underfull \hbox (badness 2503) in paragraph at lines 939--940
+[]|\TU/STSong(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 940--941
+[]|\TU/STSong(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 941--942
+[]|\TU/STSong(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 942--942
+[]|\TU/STSong(0)/m/n/12 候 选 服 务 规 模 有
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 960--960
+[]|\TU/STSong(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--960
+[]|\TU/pcr/m/n/12 fault=1\TU/STSong(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--960
+\TU/pcr/m/n/12 line/recovery=0\TU/STSong(0)/m/n/12 ；|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--961
+[]|\TU/STSong(0)/m/n/12 测 试 集
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 961--961
+[]|\TU/STSong(0)/m/n/12 服 务 级 无 监 督 根
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+[]|\TU/pcr/m/n/12 Top-1=90%\TU/STSong(0)/m/n/12 ，|
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
+Underfull \hbox (badness 3260) in paragraph at lines 995--996
+[]\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
+[][][][][] [] [] [] [][][][][][] [] [][][] []
+ []
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1007.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35
+
+] (./labx.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -3362,15 +3591,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `labx.out' has not changed.
-(rerunfilecheck)             Checksum: 63A9FAEBE9E0D7E8EEAC4264E2FEF70C;6611.
+(rerunfilecheck)             Checksum: 3D92EAAB6B16BC8FF005AAA47B4961E6;7953.
  ) 
 Here is how much of TeX's memory you used:
- 23572 strings out of 402987
- 470002 string characters out of 5455769
- 1106421 words of memory out of 5000000
- 51963 multiletter control sequences out of 15000+600000
- 636586 words of font info for 123 fonts, out of 8000000 for 9000
+ 23694 strings out of 468168
+ 486644 string characters out of 5432815
+ 1100824 words of memory out of 5000000
+ 52060 multiletter control sequences out of 15000+600000
+ 636570 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,363b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,114p,412b,2132s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on labx.pdf (31 pages).
+Output written on labx.pdf (39 pages).
