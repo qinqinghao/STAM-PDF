@@ -263,73 +263,183 @@ BARO & 无监督根因定位与服务排序 & 宋炳臻 \\
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
-\section{Prometheus安装与配置}
-本部分由王建雄负责。在 Minikube 集群中安装 Prometheus，使用 Helm 或手动部署方式：
+\section{监控系统部署}
+本部分由王建雄负责，主要完成 Prometheus + Grafana 监控系统的部署与配置，实现对 SockShop 微服务系统运行指标的采集与可视化。
+
+\subsection{Prometheus安装与配置}
+使用 Helm 在 Minikube 集群中安装 \texttt{kube-prometheus-stack}，以快速部署 Prometheus 及其相关组件。为加速镜像拉取，安装时指定了阿里云镜像仓库地址。
+
 \begin{lstlisting}[language=bash]
+# 添加 Prometheus Helm 仓库
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring --create-namespace
+helm repo update
+
+# 安装 kube-prometheus-stack
+helm install prometheus prometheus-community/kube-prometheus-stack \
+  -n monitoring --create-namespace
 \end{lstlisting}
 
-\subsection{数据源配置}
-配置 Prometheus 监控系统与 SockShop 微服务之间的连接：
+安装完成后，通过以下命令验证 Prometheus 和 Grafana 服务是否正常运行：
+
+\begin{lstlisting}[language=bash]
+kubectl get pods -n monitoring
+\end{lstlisting}
+
+\subsection{Grafana配置}
+Grafana 部署完成后，通过以下命令获取初始管理员密码：
+
+\begin{lstlisting}[language=bash]
+kubectl get secret -n monitoring prometheus-grafana \
+  -o jsonpath="{.data.admin-password}" | base64 --decode
+\end{lstlisting}
+
+随后，在 Grafana 中配置 Prometheus 数据源，并导入 Kubernetes 官方仪表盘（ID: 315），用于查看集群和 Pod 级别的资源使用情况。针对 SockShop 系统，通过筛选 \texttt{sock-shop} 命名空间，可查看各微服务的 CPU、内存等资源使用情况。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{docs/王建雄/grafana-dashboard.png}
+    \caption{Grafana仪表盘——SockShop命名空间资源使用情况}
+    \label{fig:grafana-dashboard}
+\end{figure}
+
+\section{Prometheus指标采集配置}
+在部署监控系统后，发现 SockShop 服务的 Pod 默认未被 Prometheus 自动发现。这是因为 SockShop 的 Service 缺乏 Prometheus 所需的注解（annotations），不符合 \texttt{kube-prometheus-stack} 默认的 ServiceMonitor 自动发现规则。
+
+为解决该问题，需要手动创建 \texttt{ServiceMonitor} 资源，显式定义抓取规则。配置要点如下：
 \begin{itemize}
-    \item 设置适当的抓取间隔（scrape\_interval）
-    \item 配置 ServiceMonitor 目标服务
-    \item 确保实时采集关键性能指标：请求数量、响应时间、错误率、CPU使用率、内存使用情况等
+    \item 使用 \texttt{selector.matchLabels} 选择需要抓取的 Service；
+    \item 指定抓取路径为 \texttt{/metrics}，抓取端口为 \texttt{80}；
+    \item 配置抓取间隔为 15 秒。
 \end{itemize}
 
-\section{Grafana配置}
-配置 Grafana 与 Prometheus 配合使用：
-\begin{itemize}
-    \item 添加 Prometheus 作为数据源
-    \item 创建自定义仪表盘展示微服务系统状态
-    \item 设计关键指标的可视化视图
-\end{itemize}
+\begin{lstlisting}[language=yaml]
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: sock-shop-monitor
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      name: front-end   # 目标 Service 的标签
+  endpoints:
+  - port: web
+    path: /metrics
+    interval: 15s
+  namespaceSelector:
+    matchNames:
+    - sock-shop
+\end{lstlisting}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=14cm]{figure/calculator.png}
-  \caption{Grafana监控仪表盘截图}
-  \label{fig:grafana}
+配置生效后，在 Prometheus Targets 页面中可看到 \texttt{front-end}、\texttt{carts} 等 SockShop 相关目标状态变为 \texttt{UP}，如图\ref{fig:prometheus-targets}所示。同时，在 Grafana Explore 中可成功查询 \texttt{up\{namespace="sock-shop"\}} 等指标，验证采集配置正确。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{docs/王建雄/prometheus-targets.png}
+    \caption{Prometheus Targets页面——SockShop服务状态为UP}
+    \label{fig:prometheus-targets}
 \end{figure}
 
 \section{ChaosMesh部署与故障注入}
 \subsection{ChaosMesh部署}
-在 Minikube 集群中部署 ChaosMesh：
+使用 Helm 在 Minikube 集群中部署 ChaosMesh，用于后续的故障注入实验：
+
 \begin{lstlisting}[language=bash]
 kubectl create ns chaos-mesh
-helm install chaos-mesh chaos-mesh/chaos-mesh -n=chaos-mesh --set chaosDaemon.runtime=containerd
+helm repo add chaos-mesh https://charts.chaos-mesh.org
+helm install chaos-mesh chaos-mesh/chaos-mesh -n=chaos-mesh \
+  --set chaosDaemon.runtime=containerd
 \end{lstlisting}
 
-\subsection{故障注入测试}
-验证 ChaosMesh 是否能够成功注入故障，包括：
+验证 ChaosMesh 组件运行状态：
+
+\begin{lstlisting}[language=bash]
+kubectl get pods -n chaos-mesh
+\end{lstlisting}
+
+\subsection{故障注入实验设计}
+本实验使用 \texttt{PodChaos} 资源，对 SockShop 的 \texttt{carts} 服务执行 \texttt{Pod Kill} 操作。实验配置如下：
 \begin{itemize}
-    \item \textbf{Pod故障：} Pod Kill、Container Kill
-    \item \textbf{网络故障：} 网络延迟、网络丢包
-    \item \textbf{压力故障：} CPU 压力、内存压力
+    \item 目标服务：\texttt{carts}
+    \item 故障类型：Pod Kill（强制杀死 Pod）
+    \item 持续时间：30 秒
+    \item 注入模式：一次性杀死一个 Pod
 \end{itemize}
 
 \begin{lstlisting}[language=yaml]
 apiVersion: chaos-mesh.org/v1alpha1
 kind: PodChaos
 metadata:
-  name: pod-kill-example
+  name: carts-pod-kill
   namespace: sock-shop
 spec:
   action: pod-kill
   mode: one
   selector:
     labelSelectors:
-      "name": "orders"
+      name: carts
+  duration: 30s
 \end{lstlisting}
 
-\section{数据采集}
-利用 Prometheus 采集微服务系统在以下场景下的性能数据：
+应用 YAML 配置后，\texttt{carts} Pod 被强制杀死。Kubernetes 的 ReplicaSet 控制器检测到 Pod 终态后，自动创建新 Pod 以恢复服务，整个过程无需人工干预。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{docs/王建雄/chaosmesh-experiment.png}
+    \caption{ChaosMesh Dashboard——Pod Kill实验界面}
+    \label{fig:chaosmesh-dashboard}
+\end{figure}
+
+\section{监控数据采集与验证}
+
+\subsection{故障注入效果验证}
+通过 Grafana 查询 \texttt{up\{job="carts"\}} 指标，可观察到该指标从 1 跌落到 0，随后在 Pod 重启完成后恢复至 1，如图\ref{fig:grafana-up-metric}所示。该实验验证了 Kubernetes 的自愈能力，同时表明监控系统能够准确捕获故障事件。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{docs/王建雄/grafana-up-metric.png}
+    \caption{Grafana图表——carts服务的up指标在故障注入期间跌落并恢复}
+    \label{fig:grafana-up-metric}
+\end{figure}
+
+\subsection{故障数据导出}
+故障实验期间，Prometheus 完整存储了时序数据。为支撑团队成员进行异常检测与故障诊断分析，通过 Prometheus HTTP API 导出 JSON 格式数据，查询示例如下：
+
+\begin{lstlisting}[language=bash]
+# 查询 up 指标在故障期间的数据
+curl -G "http://prometheus-server:9090/api/v1/query_range" \
+  --data-urlencode 'query=up{job="carts"}' \
+  --data-urlencode 'start=<start_time>' \
+  --data-urlencode 'end=<end_time>' \
+  --data-urlencode 'step=5s'
+\end{lstlisting}
+
+导出的数据包含以下核心指标：
 \begin{itemize}
-    \item 正常运行状态下的基线数据
-    \item 故障注入场景下的异常数据
-    \item 结合 Grafana 进行可视化展示与分析
+    \item \texttt{up} 指标（服务可用性）；
+    \item CPU 使用率；
+    \item 内存使用量；
+    \item Pod 重启次数。
 \end{itemize}
+
+上述数据已提供给团队其他成员，分别用于异常检测和故障诊断算法的复现与验证。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{docs/王建雄/exported-json.png}
+    \caption{导出的Prometheus查询结果（JSON格式片段）}
+    \label{fig:exported-json}
+\end{figure}
+
+\section{本章小结}
+本章完成了 SockShop 微服务系统的监控体系搭建与故障注入实验。主要工作包括：
+\begin{enumerate}
+    \item 使用 Helm 部署 Prometheus + Grafana 监控系统；
+    \item 创建 ServiceMonitor 资源，解决 SockShop 服务的指标采集问题；
+    \item 部署 ChaosMesh，对 \texttt{carts} 服务注入 Pod Kill 故障；
+    \item 通过 Grafana 验证故障注入效果，确认监控系统能够准确捕获服务可用性变化；
+    \item 导出故障期间的时序数据，为后续异常检测与故障诊断算法的复现提供数据支撑。
+\end{enumerate}
 
 \end{spacing}
 
