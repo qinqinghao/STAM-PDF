@@ -1,10 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 12:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 12:35
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/32631/Desktop/大作业/labx.tex
-(c:/Users/32631/Desktop/大作业/labx.tex
+**./labx.tex
+(labx.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (F:\MiKTex\tex/latex/base\report.cls
@@ -2727,44 +2726,44 @@ n input line 1270.
 LaTeX Encoding Info:    Redeclaring text command \textinterrobangdown (encoding
  TU) on input line 1406.
 )
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 93
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 99
 .
-LaTeX Font Info:    No file TUptm.fd. on input line 93.
+LaTeX Font Info:    No file TUptm.fd. on input line 99.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 93.
+(Font)              using `TU/lmr/m/n' instead on input line 99.
 
 (labx.aux)
 \openout1 = `labx.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 93.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 93
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 99.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 99
 .
  (F:\MiKTex\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -2772,57 +2771,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 93.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 93.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 93.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 93.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 93.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 93.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 93.
-LaTeX Font Info:    Redeclaring math accent \check on input line 93.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 93.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 93.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 93.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 93.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 93.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 99.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 99.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 99.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 99.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 99.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 99.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 99.
+LaTeX Font Info:    Redeclaring math accent \check on input line 99.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 99.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 99.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 99.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 99.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 93.
+(Font)              `operators' in the math version `normal' on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 93.
+(Font)                  OT1/cmr/m/n --> TU/ptm/m/n on input line 99.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 93.
+(Font)              `operators' in the math version `bold' on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 93.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/m/n on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 93.
+(Font)                  TU/ptm/m/n --> TU/ptm/m/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 93.
+(Font)                  OT1/cmr/m/it --> TU/ptm/m/it on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 93.
+(Font)                  OT1/cmr/bx/n --> TU/ptm/b/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 93.
+(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 93.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 93.
+(Font)                  TU/ptm/m/n --> TU/ptm/b/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 93.
+(Font)                  OT1/cmr/bx/it --> TU/ptm/b/it on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 93.
+(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 93.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2859,7 +2858,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count349
-Package hyperref Info: Link coloring OFF on input line 93.
+Package hyperref Info: Link coloring OFF on input line 99.
 (labx.out) (labx.out)
 \@outlinefile=\write3
 \openout3 = `labx.out'.
@@ -2869,7 +2868,7 @@ File: figure//nankai.jpg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 102.
+(Font)              using `TU/ptm/m/n' instead on input line 108.
 
 
 Package fontspec Info: 
@@ -2899,7 +2898,7 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 102.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 108.
 
 
 Package fontspec Info: 
@@ -2928,13 +2927,13 @@ Package fontspec Info:
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <16.06> on input line 108.
+(Font)              <16.06> on input line 114.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.05249> on input line 108.
+(Font)              <14.05249> on input line 114.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 108.
+(Font)              <10.53937> on input line 114.
 
-Overfull \hbox (6.33618pt too wide) detected at line 110
+Overfull \hbox (6.33618pt too wide) detected at line 116
 \TU/SimSun(1)/m/n/16.06 作 业 名 称：| 
  []
 
@@ -2965,22 +2964,22 @@ Package fontspec Info:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 111
+Overfull \hbox (6.33618pt too wide) detected at line 117
 \TU/SimSun(1)/m/n/16.06 学 院：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 112
+Overfull \hbox (6.33618pt too wide) detected at line 118
 \TU/SimSun(1)/m/n/16.06 姓 名：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 113
+Overfull \hbox (6.33618pt too wide) detected at line 119
 \TU/SimSun(1)/m/n/16.06 学 号：| 
  []
 
 
-Overfull \hbox (6.33618pt too wide) detected at line 114
+Overfull \hbox (6.33618pt too wide) detected at line 120
 \TU/SimSun(1)/m/n/16.06 指 导 老 师：| 
  []
 
@@ -3001,11 +3000,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 146.
+(Font)              <12> on input line 152.
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
-(Font)              using `TU/SimSun(1)/m/n' instead on input line 163.
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 169.
 
 
 Package fontspec Info: 
@@ -3035,25 +3034,12 @@ Package fontspec Info:
 
 [1
 
-]
-Overfull \hbox (106.00363pt too wide) in paragraph at lines 173--174
-[]\TU/SimSun(1)/m/n/12.045 宋 炳 臻 负 责 的 \TU/pcr/m/n/12.045 SLIM \TU/SimSun(1)/m/
-n/12.045 与 \TU/pcr/m/n/12.045 BARO \TU/SimSun(1)/m/n/12.045 论 文 复 现 代 码：| []$[]
-[][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][
-][][][][][][][][][][][][][][][][][][][][][][]$[] 
- []
-
-[2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
+] [2] (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-Overfull \hbox (243.38179pt too wide) in paragraph at lines 209--210
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[3
+) [3
 
 ]
 File: docs/汪孟坤/minikube集群部署sock-shop微服务系统.png Graphic file (type bmp)
@@ -3071,7 +3057,8 @@ File: docs/王建雄/prometheus-targets.png Graphic file (type bmp)
  [8] [9]
 File: docs/王建雄/grafana-up-metric.png Graphic file (type bmp)
 <docs/王建雄/grafana-up-metric.png>
- [10]
+
+[10]
 File: docs/王建雄/exported-json.png Graphic file (type bmp)
 <docs/王建雄/exported-json.png>
  [11] [12]
@@ -3088,12 +3075,12 @@ File: docs/马嘉皓/图片 3.png Graphic file (type bmp)
 File: docs/马嘉皓/图片 4.png Graphic file (type bmp)
 <docs/马嘉皓/图片 4.png>
  [15]
-Underfull \hbox (badness 1527) in paragraph at lines 525--526
+Underfull \hbox (badness 1527) in paragraph at lines 536--537
 []|\TU/SimSun(0)/m/n/12 页 面 元 素 加 载 时 发 生 明 显
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 529--530
+Underfull \hbox (badness 1527) in paragraph at lines 540--541
 []|\TU/SimSun(0)/m/n/12 页 面 视 觉 内 容 填 充 速 度 较
  []
 
@@ -3136,118 +3123,128 @@ File: docs/覃庆浩/Aggregate Report（100,10,10,90）.png Graphic file (type b
 File: docs/覃庆浩/Response Time Graph（100,10,10,90）.png Graphic file (type bmp)
 <docs/覃庆浩/Response Time Graph（100,10,10,90）.png>
  [24]
-Overfull \hbox (115.2233pt too wide) in paragraph at lines 695--706
- [][] 
- []
-
-[25] [26] (F:\MiKTex\tex/latex/listings\lstlang1.sty
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 707.
+ [25] [26]
+(F:\MiKTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 ) [27
 
 ] [28] [29] [30
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 850--851
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
 []|\TU/SimSun(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/SimSun(0)/m/n/12 、| \TU/
 pcr/m/n/12 mem-
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 852--853
+Underfull \hbox (badness 3219) in paragraph at lines 864--865
 []|\TU/SimSun(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
  []
 
 [31]
-Overfull \hbox (46.53015pt too wide) in paragraph at lines 885--886
-\TU/SimSun(1)/m/n/12.045 为 了 避 免 数 据 泄 漏，|  本 次 复 现 显 式 排 除 了 \TU/pcr/m/n/12.04
-5 seconds_from_fault_start\TU/SimSun(1)/m/n/12.045 、| \TU/pcr/m/n/12.045 second
-s_from_experiment_start\TU/SimSun(1)/m/n/12.045 、|
+Underfull \hbox (badness 10000) in paragraph at lines 898--899
+[]\TU/SimSun(1)/m/n/12.045 在 初 始 实 验 中，|  规 则 集 中 曾 出 现 \TU/pcr/m/n/12.045 seco
+nds_from_fault_start \TU/SimSun(1)/m/n/12.045 等 时 间 字 段。|  该
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 898--899
+\TU/SimSun(1)/m/n/12.045 字 段 虽 然 有 助 于 区 分 故 障 阶 段，|  但 它 来 自 实 验 标 注 过 程，|  并 
+不 是 实 际 运 维 系 统
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 898--899
+\TU/SimSun(1)/m/n/12.045 中 可 直 接 观 测 的 运 行 时 指 标。|  为 了 避 免 数 据 泄 漏，|  本 次 复 现 
+显 式 排 除 了 \TU/pcr/m/n/12.045 sec-
  []
 
 [32] [33]
-Underfull \hbox (badness 6961) in paragraph at lines 954--955
+Underfull \hbox (badness 6961) in paragraph at lines 968--969
 []|\TU/SimSun(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
  []
 
-
-Underfull \hbox (badness 1527) in paragraph at lines 971--972
+[34]
+Underfull \hbox (badness 1527) in paragraph at lines 985--986
 []|\TU/SimSun(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 972--973
+Underfull \hbox (badness 1527) in paragraph at lines 986--987
 []|\TU/SimSun(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 973--974
+Underfull \hbox (badness 1527) in paragraph at lines 987--988
 []|\TU/SimSun(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 974--975
+Underfull \hbox (badness 1527) in paragraph at lines 988--989
 []|\TU/SimSun(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
  []
 
-[34] [35]
-Underfull \hbox (badness 2503) in paragraph at lines 1017--1018
+[35]
+Underfull \hbox (badness 2503) in paragraph at lines 1031--1032
 []|\TU/SimSun(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1018--1019
+Underfull \hbox (badness 2503) in paragraph at lines 1032--1033
 []|\TU/SimSun(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1019--1020
+Underfull \hbox (badness 2503) in paragraph at lines 1033--1034
 []|\TU/SimSun(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1020--1020
+Underfull \hbox (badness 2293) in paragraph at lines 1034--1034
 []|\TU/SimSun(0)/m/n/12 候 选 服 务 规 模 有
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
 []|\TU/SimSun(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
 []|\TU/pcr/m/n/12 fault=1\TU/SimSun(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
 \TU/pcr/m/n/12 line/recovery=0\TU/SimSun(0)/m/n/12 ；|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1039
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
 []|\TU/SimSun(0)/m/n/12 测 试 集
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1039--1039
+Underfull \hbox (badness 2293) in paragraph at lines 1053--1053
 []|\TU/SimSun(0)/m/n/12 服 务 级 无 监 督 根
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1039--1040
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
 []|\TU/pcr/m/n/12 Top-1=90%\TU/SimSun(0)/m/n/12 ，|
  []
 
 [37] [38]
-Underfull \hbox (badness 3260) in paragraph at lines 1069--1070
+Underfull \hbox (badness 3260) in paragraph at lines 1083--1084
 []\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
 [][][][][] [] [] [] [][][][][][] [] [][][] []
  []
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1078.
+(Font)              using `TU/ptm/m/n' instead on input line 1092.
 
 [39
 
@@ -3264,12 +3261,12 @@ Package rerunfilecheck Info: File `labx.out' has not changed.
 (rerunfilecheck)             Checksum: 9072530AC1B820607F57639F90BC2A45;7853.
  ) 
 Here is how much of TeX's memory you used:
- 23733 strings out of 402987
- 478447 string characters out of 5455769
- 1096299 words of memory out of 5000000
- 52111 multiletter control sequences out of 15000+600000
- 636594 words of font info for 124 fonts, out of 8000000 for 9000
+ 23742 strings out of 402987
+ 478600 string characters out of 5455769
+ 1096305 words of memory out of 5000000
+ 52120 multiletter control sequences out of 15000+600000
+ 637518 words of font info for 128 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,439b,2171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,414b,2171s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on labx.pdf (43 pages).

@@ -15,6 +15,12 @@
 \usepackage[top=30mm,bottom=30mm,left=20mm,right=20mm]{geometry}
 \usepackage{cite}
 \usepackage{listings}
+\lstset{
+    breaklines=true,
+    breakatwhitespace=false,
+    basicstyle=\ttfamily\small,
+    showstringspaces=false
+}
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{xcolor}
@@ -169,8 +175,10 @@
 
 \section{GitHub仓库}
 \begin{itemize}
-    \item 张世隆负责的 MARINA 算法复现代码：\url{https://github.com/Dracarys218/MARINA}
-    \item 宋炳臻负责的 SLIM 与 BARO 论文复现代码：\url{https://github.com/Jiawei-Yuu/SoftwareTest-FinalHomework}
+    \item 张世隆负责的 MARINA 算法复现代码：\\
+        \url{https://github.com/Dracarys218/MARINA}
+    \item 宋炳臻负责的 SLIM 与 BARO 论文复现代码：\\
+        \url{https://github.com/Jiawei-Yuu/SoftwareTest-FinalHomework}
 \end{itemize}
 
 \end{spacing}
@@ -206,7 +214,10 @@ kubectl cluster-info
 
 \begin{lstlisting}[language=bash]
 kubectl create ns sock-shop
-kubectl apply -f https://raw.githubusercontent.com/microservices-demo/microservices-demo/master/deploy/kubernetes/complete-demo.yaml
+kubectl apply -f \
+  https://raw.githubusercontent.com/\
+  microservices-demo/microservices-demo/\
+  master/deploy/kubernetes/complete-demo.yaml
 \end{lstlisting}
 
 \subsection{部署验证}
@@ -691,10 +702,11 @@ Get\_Orders & GET & /orders & 查看订单列表 \\
 \subsection{测试结果分析}
 \begin{table}[htbp]
 \centering
+\small
 \caption{各场景性能指标汇总}
-\begin{tabular}{ccccccc}
+\begin{tabular}{lcccccc}
 \toprule
-\textbf{场景} & \textbf{平均响应时间(ms)} & \textbf{中位数(ms)} & \textbf{90\%响应时间(ms)} & \textbf{99\%响应时间(ms)} & \textbf{吞吐量(req/s)} & \textbf{错误率} \\
+\textbf{场景} & \textbf{平均(ms)} & \textbf{中位数(ms)} & \textbf{90\%(ms)} & \textbf{99\%(ms)} & \textbf{吞吐量(req/s)} & \textbf{错误率} \\
 \midrule
 Scene-1 & 20 & 21 & 41 & 74 & 15.8 & 0.00\% \\
 Scene-2 & 7 & 3 & 27 & 66 & 163.7 & 0.00\% \\
@@ -882,7 +894,9 @@ SLIM 在本次复现中被定位为一个监督式规则学习算法\cite{slim20
 
 SLIM 的规则学习过程要求输入特征为布尔条件，因此需要先将连续监控指标离散化。本实验仅使用训练集计算 25\%、50\%、75\% 分位数阈值，并将相同阈值应用到测试集，从而避免测试集信息泄漏。每个阈值同时生成“\texttt{<=}”和“\texttt{>}”两个方向的谓词，以同时捕捉故障阶段可能出现的指标下降和指标上升现象。随后删除训练集中取值完全相同的重复二值特征，最终得到 26 个有效二值特征。
 
+\begin{sloppypar}
 在初始实验中，规则集中曾出现 \texttt{seconds\_from\_fault\_start} 等时间字段。该字段虽然有助于区分故障阶段，但它来自实验标注过程，并不是实际运维系统中可直接观测的运行时指标。为了避免数据泄漏，本次复现显式排除了 \texttt{seconds\_from\_fault\_start}、\texttt{seconds\_from\_experiment\_start}、\texttt{seconds\_from\_baseline\_start} 和 \texttt{seconds\_from\_recovery\_start} 等时间辅助字段。排除后，候选规则数为 155 条，经过精确率和召回率过滤后保留 33 条候选规则。
+\end{sloppypar}
 
 本次复现实现了两个层次的规则学习。简化版首先枚举长度为 1 和 2 的候选规则，单条规则内部使用 AND 逻辑，多条规则之间使用 OR 逻辑，然后以训练集整体 F1 的增量为目标贪心选择规则。增强版进一步近似复现 SLIM 论文中 Algorithm 1/2 的核心思想：外层使用带步数折扣的 distorted marginal gain 近似形式选择规则，内层通过随机初始化和单条件替换局部搜索实现 \texttt{GenerateRule}。两个版本均设置单条规则长度上限为 2，规则集最大规则数为 5。
 

@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {6}SockShop微服务系统部署}{3}{section.0.6}%
 \contentsline {subsection}{\numberline {6.1}部署过程}{3}{subsection.0.6.1}%
 \contentsline {subsection}{\numberline {6.2}部署验证}{3}{subsection.0.6.2}%
-\contentsline {section}{\numberline {7}论文选择与阅读}{4}{section.0.7}%
-\contentsline {subsection}{\numberline {7.1}论文方向}{4}{subsection.0.7.1}%
+\contentsline {section}{\numberline {7}论文选择与阅读}{5}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}论文方向}{5}{subsection.0.7.1}%
 \contentsline {subsection}{\numberline {7.2}论文阅读重点}{5}{subsection.0.7.2}%
 \contentsline {chapter}{阶段二：Prometheus \& Grafana 数据采集与维护}{6}{chapter*.4}%
 \contentsline {section}{\numberline {8}监控系统部署}{6}{section.0.8}%
