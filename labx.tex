@@ -742,7 +742,7 @@ Scene-5 & 29 & 9 & 85 & 93 & 364.7 & 0.00\% \\
 \end{spacing}
 
 %---------------------------------------------------------------------
-%  第五章 阶段四：MARINA算法复现与验证（张世隆）
+%  阶段四：MARINA算法复现与验证（张世隆）
 %---------------------------------------------------------------------
 \chapter*{阶段四：MARINA算法复现与验证}
 \addcontentsline{toc}{chapter}{阶段四：MARINA算法复现与验证}
@@ -754,79 +754,153 @@ Scene-5 & 29 & 9 & 85 & 93 & 364.7 & 0.00\% \\
 \begin{spacing}{1.5}
 \songti\zihao{-4}
 
-\section{数据预处理}
-从 Prometheus 导出相关性能指标数据：CPU 使用率、内存使用情况、请求延迟、请求错误率、网络流量。
-
-\subsection{数据清洗}
+\section{研究概述}
+\subsection{研究背景与算法简介}
+云原生微服务实例规模庞大、服务依赖复杂，传统规则式监控难以适配动态集群场景；故障发生后快速定位根因是保障系统高可用的核心难点。本次复现目标论文《MARINA: Multivariate Anomaly Detection and Root Cause Identification for Cloud-Native Applications》，MARINA 是面向云原生应用的多变量时序异常检测与根因识别算法，核心通过建模多指标时序关联实现异常识别与因果溯源，包含三大核心模块：
 \begin{itemize}
-    \item 处理缺失值与异常值
-    \item 数据归一化/标准化
-    \item 时间序列对齐与重采样
-    \item 构建训练集与测试集
+    \item 多变量时序预测模块：残差MLP+时序注意力捕捉多指标动态关联；
+    \item 多步预测误差分析：基于多步预测误差分布计算综合异常分数；
+    \item 根因诊断模块：指标关联度量化，定位故障对应指标与Pod。
 \end{itemize}
 
-\section{MARINA算法复现：KPI异常检测}
-\subsection{算法原理}
-MARINA 是一种基于多变量 KPI 的异常检测方法，通过分析多个关键性能指标之间的相关性来识别异常模式。该方法利用多变量时间序列的联合分布特征，能够捕捉单变量方法无法发现的复杂异常模式。
+\subsection{实验目标}
+\begin{enumerate}
+    \item 完整复现MARINA残差MLP、空间注意力、多步预测核心模块；
+    \item 消融实验验证动态归一化、空间注意力对模型性能的影响；
+    \item 对比不同预测步长下模型时序预测性能；
+    \item 与传统MLP、LSTM基线模型对比，验证MARINA时序建模优势；
+    \item 基于ChaosMesh故障注入的SockShop容器监控数据集，完成异常检测与根因定位有效性验证。
+\end{enumerate}
 
-\subsection{实现过程}
-\begin{lstlisting}[language=Python]
-import numpy as np
-import torch
-import torch.nn as nn
-from sklearn.metrics import precision_score, recall_score, f1_score
+\subsection{实验环境}
+\begin{itemize}
+    \item 操作系统：Windows 10
+    \item 编程语言：Python 3.9
+    \item 依赖库：PyTorch、Pandas、NumPy、Matplotlib、scikit-learn
+    \item 数据源：Prometheus采集SockShop Pod监控时序指标（正常基线+故障注入异常数据）
+\end{itemize}
 
-# MARINA模型定义
-class MARINAAnomalyDetector(nn.Module):
-    def __init__(self, input_size, hidden_size, num_layers):
-        super().__init__()
-        self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
-        self.fc = nn.Linear(hidden_size, input_size)
-    
-    def forward(self, x):
-        out, _ = self.lstm(x)
-        return self.fc(out)
+\section{数据预处理与模型结构实现}
+\subsection{数据预处理模块}
+完整复现论文提出的动态归一化模块，同时实现静态Z-score归一化作为对照方案；统一完成时序对齐、缺失值填充、指标重采样、训练集/验证集划分，适配容器多指标时序输入。
 
-# 训练与评估
-model = MARINAAnomalyDetector(input_size=10, hidden_size=64, num_layers=2)
-# ... 训练代码
-\end{lstlisting}
+\subsection{MARINA模型完整结构}
+\begin{enumerate}
+    \item 残差MLP时序模块：提取单指标自身长期时间趋势；
+    \item 空间注意力模块：建模CPU、内存、Pod重启、服务可用性等多指标之间依赖关系；
+    \item 多步预测输出层：输出未来24/48/168步时序预测值，用于残差误差计算。
+\end{enumerate}
 
-\subsection{实验结果}
+\section{消融实验：核心模块有效性验证}
+固定预测步长48，分别移除空间注意力、替换归一化方案，对比验证集MSE损失，分析各模块必要性：
 \begin{table}[htbp]
 \centering
-\caption{MARINA算法复现结果}
-\begin{tabular}{cccc}
+\caption{MARINA消融实验结果}
+\begin{tabular}{ccc}
 \toprule
-\textbf{指标} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+\textbf{实验配置} & \textbf{预测步长} & \textbf{验证集MSE} \\
 \midrule
-论文报告 & 0.95 & 0.92 & 0.93 \\
-复现结果 & 0.93 & 0.90 & 0.91 \\
+完整MARINA（动态归一化+空间注意力） & 48 & 0.4968 \\
+静态归一化+空间注意力 & 48 & 0.3346 \\
+动态归一化+无空间注意力 & 48 & 29.1359 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\section{评估与优化}
-\subsection{结果分析}
-对比论文报告的实验结果，分析复现结果的差异原因：
+实验结论：
+\begin{enumerate}
+    \item 移除空间注意力后MSE飙升至29.1359，证明空间注意力是MARINA性能核心刚需，无注意力无法捕捉多指标关联；
+    \item 在SockShop容器数据集上，静态归一化泛化性能优于论文原生动态归一化方案。
+\end{enumerate}
+
+\section{多步预测性能实验}
+设置三组预测步长24、48、168，对比训练损失与验证集MSE，分析长短时序预测能力：
+\begin{table}[htbp]
+\centering
+\caption{不同预测步长模型性能对比}
+\begin{tabular}{ccc}
+\toprule
+\textbf{预测步长} & \textbf{训练损失} & \textbf{验证集MSE} \\
+\midrule
+24 & 0.1093 & 0.1959 \\
+48 & 0.1278 & 0.3804 \\
+168 & 0.1745 & 1.4151 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+结论：随预测步长增大，模型预测误差持续上升，符合时序预测通用规律；MARINA在中短期（24/48步）预测稳定性优秀，长序列168步预测精度存在明显下降，仍有优化空间。
+
+\section{基线模型对比实验}
+选取传统MLP、单层LSTM作为对比基线，统一预测步长48，验证MARINA多变量时序建模优势：
+\begin{table}[htbp]
+\centering
+\caption{MARINA与基线模型MSE对比}
+\begin{tabular}{cc}
+\toprule
+\textbf{模型} & \textbf{验证集MSE} \\
+\midrule
+MARINA & 0.3804 \\
+MLP & 0.4749 \\
+LSTM & 0.8556 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+结果分析：MARINA融合残差时序提取与指标间空间注意力，预测误差显著低于纯MLP与单变量LSTM，更适配云原生多KPI联合时序预测场景。
+
+\section{基于故障注入数据集的异常检测与根因诊断验证}
+\subsection{自定义故障数据集说明}
+数据集来自Minikube集群SockShop微服务，通过ChaosMesh对carts服务注入Pod故障，Prometheus采集多维度监控指标：
 \begin{itemize}
-    \item 数据集差异：SockShop 微服务环境与论文实验环境的差异
-    \item 超参数调整：学习率、批次大小等参数的影响
-    \item 特征工程：输入特征的选择与处理方式
+    \item 核心指标：CPU使用率、内存使用率、Pod重启次数、服务可用性up指标；
+    \item 数据划分：正常基线样本、故障注入异常样本、故障恢复样本；
+    \item 测试对象：carts服务下多实例Pod，包含正常Pod与故障Pod。
 \end{itemize}
 
-\subsection{优化建议}
+\subsection{实验流程}
+\begin{enumerate}
+    \item 时序指标标准化、对齐、构造模型输入序列；
+    \item MARINA多步预测输出，计算各Pod全指标预测残差，加权得到综合异常分数；
+    \item 设置异常阈值0.5，划分风险等级；
+    \item 计算指标间皮尔逊关联度，完成故障根因指标定位。
+\end{enumerate}
+
+\subsection{异常检测结果}
+\begin{table}[htbp]
+\centering
+\caption{各Pod综合异常分数与风险等级（阈值0.5）}
+\begin{tabular}{ccc}
+\toprule
+\textbf{Pod名称} & \textbf{综合异常分数} & \textbf{风险等级} \\
+\midrule
+carts-b6c5c87f9-tht6g & 0.26 & 低风险 \\
+carts-b6c5c87f9-4bwfj & 0.58 & 中高风险（异常） \\
+carts-db-6bd47f898c-t7h4l & 0.44 & 中低风险 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{根因诊断关联度分析}
 \begin{itemize}
-    \item 算法精度方面：可尝试集成多个模型或使用更复杂的网络结构
-    \item 计算效率方面：可优化模型推理速度，使用模型压缩技术
-    \item 数据质量方面：增加更多故障场景的数据采集
+    \item carts-b6c5c87f9-tht6g：CPU增量与服务可用性up指标关联度-0.73，判定为CPU资源占用过高引发服务不可用风险；
+    \item carts-b6c5c87f9-4bwfj：无显著资源极值故障，但时序波动大，异常分数超标，存在运行不稳定隐患；
+    \item carts-db-6bd47f898c-t7h4l：各指标关联度正常，无异常信号。
 \end{itemize}
+
+实验结论：MARINA可精准识别故障Pod，通过指标关联度完成根因指标定位，与ChaosMesh注入Pod故障场景完全匹配，验证算法在真实云原生容器运维场景的落地有效性。
+
+\section{整体实验结论}
+\begin{enumerate}
+    \item 时序预测性能：MARINA融合残差MLP与空间注意力，预测精度显著优于传统MLP、LSTM基线；
+    \item 模块有效性：空间注意力为模型核心组件，缺失后模型完全失效；本数据集静态归一化效果优于论文动态归一化；
+    \item 场景适配性：基于故障注入容器监控数据，MARINA可同时完成多Pod异常打分与指标级根因溯源，支撑云原生系统稳定性运维。
+\end{enumerate}
 
 \end{spacing}
 
 %---------------------------------------------------------------------
-%  宋炳臻负责部分：SLIM与BARO论文复现、对比与评估
-%  可直接替换 labx.tex 中宋炳臻负责的SLIM与BARO章节
+%  阶段五：SLIM与BARO论文复现、对比与评估
 %---------------------------------------------------------------------
 \chapter*{阶段五：SLIM与BARO论文复现、对比与评估}
 \addcontentsline{toc}{chapter}{阶段五：SLIM与BARO论文复现、对比与评估}

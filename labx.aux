@@ -98,46 +98,56 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {13.3}测试结果分析}{25}{subsection.0.13.3}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces 各场景性能指标汇总}}{25}{table.0.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{阶段四：MARINA算法复现与验证}{27}{chapter*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {14}数据预处理}{27}{section.0.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {14.1}数据清洗}{27}{subsection.0.14.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {15}MARINA算法复现：KPI异常检测}{27}{section.0.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {15.1}算法原理}{27}{subsection.0.15.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {15.2}实现过程}{27}{subsection.0.15.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {15.3}实验结果}{28}{subsection.0.15.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces MARINA算法复现结果}}{28}{table.0.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {16}评估与优化}{28}{section.0.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.1}结果分析}{28}{subsection.0.16.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.2}优化建议}{29}{subsection.0.16.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}研究概述}{27}{section.0.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.1}研究背景与算法简介}{27}{subsection.0.14.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.2}实验目标}{27}{subsection.0.14.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.3}实验环境}{28}{subsection.0.14.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {15}数据预处理与模型结构实现}{28}{section.0.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.1}数据预处理模块}{28}{subsection.0.15.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.2}MARINA模型完整结构}{28}{subsection.0.15.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16}消融实验：核心模块有效性验证}{28}{section.0.16}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces MARINA消融实验结果}}{28}{table.0.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {17}多步预测性能实验}{29}{section.0.17}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces 不同预测步长模型性能对比}}{29}{table.0.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {18}基线模型对比实验}{29}{section.0.18}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces MARINA与基线模型MSE对比}}{29}{table.0.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {19}基于故障注入数据集的异常检测与根因诊断验证}{30}{section.0.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {19.1}自定义故障数据集说明}{30}{subsection.0.19.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {19.2}实验流程}{30}{subsection.0.19.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {19.3}异常检测结果}{30}{subsection.0.19.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces 各Pod综合异常分数与风险等级（阈值0.5）}}{30}{table.0.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {19.4}根因诊断关联度分析}{30}{subsection.0.19.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {20}整体实验结论}{31}{section.0.20}\protected@file@percent }
 \citation{slim2024}
 \citation{baro2024}
 \citation{slim2024}
-\@writefile{toc}{\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{30}{chapter*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {17}复现任务概述}{30}{section.0.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {18}SLIM论文复现：可解释规则学习}{30}{section.0.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {18.1}算法目标与输入输出}{30}{subsection.0.18.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces SLIM算法输入、输出与标签说明}}{31}{table.0.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {18.2}数据构造与标注方法}{31}{subsection.0.18.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces SLIM复现实验数据划分}}{32}{table.0.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {18.3}谓词构造与规则学习实现}{32}{subsection.0.18.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces SLIM两种复现实现方式}}{33}{table.0.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {18.4}SLIM复现结果与解释}{33}{subsection.0.18.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces SLIM复现分类结果}}{33}{table.0.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{阶段五：SLIM与BARO论文复现、对比与评估}{32}{chapter*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {21}复现任务概述}{32}{section.0.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {22}SLIM论文复现：可解释规则学习}{32}{section.0.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {22.1}算法目标与输入输出}{32}{subsection.0.22.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces SLIM算法输入、输出与标签说明}}{33}{table.0.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {22.2}数据构造与标注方法}{33}{subsection.0.22.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces SLIM复现实验数据划分}}{34}{table.0.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {22.3}谓词构造与规则学习实现}{34}{subsection.0.22.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces SLIM两种复现实现方式}}{35}{table.0.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {22.4}SLIM复现结果与解释}{35}{subsection.0.22.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces SLIM复现分类结果}}{35}{table.0.14}\protected@file@percent }
 \citation{baro2024}
-\@writefile{toc}{\contentsline {section}{\numberline {19}BARO论文复现：无监督根因定位}{34}{section.0.19}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {19.1}算法目标与输入输出}{34}{subsection.0.19.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces BARO算法输入、输出与评估标签说明}}{34}{table.0.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {19.2}算法流程实现}{34}{subsection.0.19.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces BARO复现流程}}{35}{table.0.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {19.3}BARO复现结果与解释}{35}{subsection.0.19.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces BARO复现排序结果}}{35}{table.0.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {19.4}BARO结果可信度与实验边界分析}{36}{subsection.0.19.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces BARO复现结果偏高的原因分析}}{36}{table.0.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {20}两篇论文复现结果对比}{37}{section.0.20}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces SLIM与BARO复现任务和评价方式对比}}{37}{table.0.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {21}评估与优化建议}{37}{section.0.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {21.1}SLIM复现评估与优化}{37}{subsection.0.21.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {21.2}BARO复现评估与优化}{38}{subsection.0.21.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{参考文献}{38}{subsection.0.21.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {23}BARO论文复现：无监督根因定位}{36}{section.0.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {23.1}算法目标与输入输出}{36}{subsection.0.23.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces BARO算法输入、输出与评估标签说明}}{36}{table.0.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {23.2}算法流程实现}{36}{subsection.0.23.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces BARO复现流程}}{37}{table.0.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {23.3}BARO复现结果与解释}{37}{subsection.0.23.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces BARO复现排序结果}}{37}{table.0.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {23.4}BARO结果可信度与实验边界分析}{38}{subsection.0.23.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces BARO复现结果偏高的原因分析}}{38}{table.0.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {24}两篇论文复现结果对比}{39}{section.0.24}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces SLIM与BARO复现任务和评价方式对比}}{39}{table.0.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {25}评估与优化建议}{39}{section.0.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {25.1}SLIM复现评估与优化}{39}{subsection.0.25.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {25.2}BARO复现评估与优化}{40}{subsection.0.25.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{参考文献}{40}{subsection.0.25.2}\protected@file@percent }
 \bibcite{sockshop}{1}
 \bibcite{prometheus}{2}
 \bibcite{chaosmesh}{3}
@@ -145,4 +155,4 @@
 \bibcite{slim2024}{5}
 \bibcite{baro2024}{6}
 \ttl@finishall
-\gdef \@abspage@last{43}
+\gdef \@abspage@last{45}

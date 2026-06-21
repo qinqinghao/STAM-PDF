@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 12:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.20)  21 JUN 2026 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3125,128 +3125,132 @@ File: docs/覃庆浩/Response Time Graph（100,10,10,90）.png Graphic file (typ
  [24]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 707.
- [25] [26]
-(F:\MiKTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [27
+ [25] [26] [27
 
-] [28] [29] [30
+] [28] [29] [30]
+Overfull \hbox (17.31715pt too wide) in paragraph at lines 891--892
+[]\TU/SimSun(1)/m/n/12.045 实 验 结 论：| \TU/pcr/m/n/12.045 MARINA \TU/SimSun(1)/m/
+n/12.045 可 精 准 识 别 故 障 \TU/pcr/m/n/12.045 Pod\TU/SimSun(1)/m/n/12.045 ，|  通 过 指
+ 标 关 联 度 完 成 根 因 指 标 定 位，|  与 \TU/pcr/m/n/12.045 ChaosMesh
+ []
+
+[31] [32
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 862--863
+Underfull \hbox (badness 10000) in paragraph at lines 936--937
 []|\TU/SimSun(0)/m/n/12 包 括 \TU/pcr/m/n/12 cpu_rate\TU/SimSun(0)/m/n/12 、| \TU/
 pcr/m/n/12 mem-
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 864--865
+Underfull \hbox (badness 3219) in paragraph at lines 938--939
 []|\TU/SimSun(0)/m/n/12 将 连 续 指 标 转 化 为 \TU/pcr/m/n/12 metric <=
  []
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
 []\TU/SimSun(1)/m/n/12.045 在 初 始 实 验 中，|  规 则 集 中 曾 出 现 \TU/pcr/m/n/12.045 seco
 nds_from_fault_start \TU/SimSun(1)/m/n/12.045 等 时 间 字 段。|  该
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
 \TU/SimSun(1)/m/n/12.045 字 段 虽 然 有 助 于 区 分 故 障 阶 段，|  但 它 来 自 实 验 标 注 过 程，|  并 
 不 是 实 际 运 维 系 统
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
 \TU/SimSun(1)/m/n/12.045 中 可 直 接 观 测 的 运 行 时 指 标。|  为 了 避 免 数 据 泄 漏，|  本 次 复 现 
 显 式 排 除 了 \TU/pcr/m/n/12.045 sec-
  []
 
-[32] [33]
-Underfull \hbox (badness 6961) in paragraph at lines 968--969
+[34] [35]
+Underfull \hbox (badness 6961) in paragraph at lines 1042--1043
 []|\TU/SimSun(0)/m/n/12 用 于 定 位 最 可 疑 的 根 因 服 务 及
  []
 
-[34]
-Underfull \hbox (badness 1527) in paragraph at lines 985--986
+[36]
+Underfull \hbox (badness 1527) in paragraph at lines 1059--1060
 []|\TU/SimSun(0)/m/n/12 判 断 异 常 从 何 时 开 始 显 著
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 986--987
+Underfull \hbox (badness 1527) in paragraph at lines 1060--1061
 []|\TU/SimSun(0)/m/n/12 减 少 极 端 值 对 异 常 评 分 的
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 987--988
+Underfull \hbox (badness 1527) in paragraph at lines 1061--1062
 []|\TU/SimSun(0)/m/n/12 得 到 每 个 服 务 的 根 因 可 疑
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 988--989
+Underfull \hbox (badness 1527) in paragraph at lines 1062--1063
 []|\TU/SimSun(0)/m/n/12 评 价 真 实 根 因 是 否 排 在 前
  []
 
-[35]
-Underfull \hbox (badness 2503) in paragraph at lines 1031--1032
+[37]
+Underfull \hbox (badness 2503) in paragraph at lines 1105--1106
 []|\TU/SimSun(0)/m/n/12 算 法 更 容 易 捕 捉 一 致 的
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1032--1033
+Underfull \hbox (badness 2503) in paragraph at lines 1106--1107
 []|\TU/SimSun(0)/m/n/12 正 常 窗 口 与 故 障 窗 口 边
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 1033--1034
+Underfull \hbox (badness 2503) in paragraph at lines 1107--1108
 []|\TU/SimSun(0)/m/n/12 根 因 服 务 异 常 分 数 更 容
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1034--1034
+Underfull \hbox (badness 2293) in paragraph at lines 1108--1108
 []|\TU/SimSun(0)/m/n/12 候 选 服 务 规 模 有
  []
 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1126
 []|\TU/SimSun(0)/m/n/12 时 间 点 级 \TU/pcr/m/n/12 Pod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1126
 []|\TU/pcr/m/n/12 fault=1\TU/SimSun(0)/m/n/12 ，| \TU/pcr/m/n/12 base-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1126
 \TU/pcr/m/n/12 line/recovery=0\TU/SimSun(0)/m/n/12 ；|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
 []|\TU/SimSun(0)/m/n/12 测 试 集
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1053--1053
+Underfull \hbox (badness 2293) in paragraph at lines 1127--1127
 []|\TU/SimSun(0)/m/n/12 服 务 级 无 监 督 根
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1128
 []|\TU/pcr/m/n/12 Top-1=90%\TU/SimSun(0)/m/n/12 ，|
  []
 
-[37] [38]
-Underfull \hbox (badness 3260) in paragraph at lines 1083--1084
+[39] [40]
+Underfull \hbox (badness 3260) in paragraph at lines 1157--1158
 []\TU/pcr/m/n/12.045 Weaveworks. SockShop: A Microservice Demo Application. []$
 [][][][][] [] [] [] [][][][][][] [] [][][] []
  []
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 1092.
+(Font)              using `TU/ptm/m/n' instead on input line 1166.
 
-[39
+[41
 
 ] (labx.aux)
  ***********
@@ -3257,16 +3261,22 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `labx.out' has not changed.
-(rerunfilecheck)             Checksum: 9072530AC1B820607F57639F90BC2A45;7853.
+
+Package rerunfilecheck Warning: File `labx.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `labx.out':
+(rerunfilecheck)             Before: 9072530AC1B820607F57639F90BC2A45;7853
+(rerunfilecheck)             After:  0219149BB8A4E760EABCAF64D34A2866;8970.
  ) 
 Here is how much of TeX's memory you used:
- 23742 strings out of 402987
- 478600 string characters out of 5455769
- 1096305 words of memory out of 5000000
- 52120 multiletter control sequences out of 15000+600000
+ 23641 strings out of 402987
+ 479279 string characters out of 5455769
+ 1074087 words of memory out of 5000000
+ 52021 multiletter control sequences out of 15000+600000
  637518 words of font info for 128 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,414b,2171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,414b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on labx.pdf (43 pages).
+Output written on labx.pdf (45 pages).
